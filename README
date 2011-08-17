@@ -1,0 +1,4 @@
+This is my customized configurations for my *nix environments so that all my machines stay in sync.
+
+Before I use these, I first install https://github.com/carlhuda/janus to add features to VIM,
+and https://github.com/robbyrussell/oh-my-zsh to add ZSH features.
