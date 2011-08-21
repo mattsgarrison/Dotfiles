@@ -75,6 +75,9 @@ map <Leader><Leader> :ZoomWin<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+" Make the taglist show up on the right
+let Tlist_Use_Right_Window   = 1
+
 
 " Remember last location in file
 if has("autocmd")
@@ -135,6 +138,10 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" Map W to w since it's a common typo
+command! W :w
+
 
 " CTRL-Tab is Next window
 noremap <C-Tab> <C-W>w
