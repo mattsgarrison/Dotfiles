@@ -8,7 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 #export ZSH_THEME="dieter"
 #export ZSH_THEME="eastwood"
 #export ZSH_THEME="bira"
-export ZSH_THEME="dst"
+#export ZSH_THEME="dst"
+export ZSH_THEME="alanpeabody"
 #export ZSH_THEME="random"
 
 # Set to this to use case-sensitive completion
@@ -31,4 +32,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+# Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
+rvm use default
 
+# I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
+PATH="$HOME/bin:$PATH"
