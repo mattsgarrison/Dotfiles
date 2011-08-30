@@ -33,12 +33,10 @@ Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 Bundle 'vim-coffee-script'
 Bundle 'Sass'
-"Bundle 'haml.zip'
 Bundle 'Markdown'
-"Bundle 'git.zip'
-"Bundle 'javascript.vim'
-"Bundle 'javascript.vim'
-" non github repos
+Bundle 'jQuery'
+
+" explicit github repos
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
