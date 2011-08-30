@@ -3,8 +3,49 @@
 " usually connect from home via screen.
 "
 set clipboard=autoselect,exclude:cons\\\|linux\\\|screen
+filetype off
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
+" let Vundle manage Vundle https://github.com/gmarik/vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'rails.vim'
+Bundle 'NERD_tree-Project'
+Bundle 'SuperTab'
+Bundle 'surround.vim'
+Bundle 'ZoomWin'
+Bundle 'Syntastic'
+Bundle 'vim-indent-object'
+Bundle 'taglist.vim'
+Bundle 'unimpaired.vim'
+Bundle 'The-NERD-tree'
+Bundle 'The-NERD-Commenter'
+Bundle 'vim-coffee-script'
+Bundle 'Sass'
+"Bundle 'haml.zip'
+Bundle 'Markdown'
+"Bundle 'git.zip'
+"Bundle 'javascript.vim'
+"Bundle 'javascript.vim'
+" non github repos
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
+Bundle 'git://github.com/pangloss/vim-javascript.git'
+Bundle 'git://github.com/tpope/vim-haml'
+" ...
+
+filetype plugin indent on     " required! 
 
 set nocompatible
 set title
