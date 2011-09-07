@@ -8,7 +8,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle https://github.com/gmarik/vundle
+" let Vundle manage Vundle 
+" $ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 " required! 
 Bundle 'gmarik/vundle'
 
