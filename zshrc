@@ -31,7 +31,7 @@ plugins=(git ruby bundle rails3)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 # Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
 rvm use default
 
