@@ -27,7 +27,7 @@ Bundle 'surround.vim'
 Bundle 'ZoomWin'
 Bundle 'Syntastic'
 Bundle 'vim-indent-object'
-Bundle 'taglist.vim'
+Bundle 'Tagbar'
 Bundle 'unimpaired.vim'
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
@@ -41,6 +41,8 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/tpope/vim-haml'
+Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
+Bundle 'git://github.com/kien/ctrlp.vim'
 " ...
 
 filetype plugin indent on     " required! 
@@ -218,13 +220,21 @@ let g:gist_open_browser_after_post = 1
 set modeline
 set modelines=10
 
-"Remap backtick to Esc
+" Remap backtick to Esc
 :imap ` <Esc>
-
-"Set color mode for 256colors
+" Map double-tap Esc to clear search highlights
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+" Set color mode for 256colors
 set t_Co=256
 " Default color scheme
 color jellybeans
+
+" Define some default colors for the indent guide for terminal based vim
+hi IndentGuidesOdd  ctermbg=grey
+hi IndentGuidesEven ctermbg=darkgrey
+
+hi IndentGuidesOdd  ctermbg=grey
+hi IndentGuidesEven ctermbg=darkgrey
 
 " Let VIM handle multiple buffers nicely
 set hidden
