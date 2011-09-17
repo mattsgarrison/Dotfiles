@@ -42,6 +42,8 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/tpope/vim-haml'
+Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
+Bundle 'git://github.com/tpope/vim-markdown.git'
 " ...
 
 filetype plugin indent on     " required! 
