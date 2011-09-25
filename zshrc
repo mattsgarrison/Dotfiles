@@ -32,8 +32,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
-# Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
-rvm use default
 
 # I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
 PATH="$HOME/bin:$PATH"
+export RACK_ENV="development"
+export RAILS_ENV="development"
+
+# ZSH confuses bracket globbing with Rake's parameter passing style
+alias rake='noglob rake'
+# Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
+rvm use default
