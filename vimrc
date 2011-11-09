@@ -8,7 +8,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle https://github.com/gmarik/vundle
+" let Vundle manage Vundle 
+"  git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 " required! 
 Bundle 'gmarik/vundle'
 
@@ -43,6 +44,10 @@ Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/tpope/vim-haml'
 Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
 Bundle 'git://github.com/kien/ctrlp.vim'
+Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
+Bundle 'git://github.com/tpope/vim-markdown.git'
+Bundle 'git://github.com/juvenn/mustache.vim.git'
+
 " ...
 
 filetype plugin indent on     " required! 

@@ -26,12 +26,9 @@ export ZSH_THEME="alanpeabody"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby bundle rails3)
+plugins=(git git-flow ruby bundle rails3)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
 
 # I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
 PATH="$HOME/bin:$PATH"
@@ -40,5 +37,8 @@ export RAILS_ENV="development"
 
 # ZSH confuses bracket globbing with Rake's parameter passing style
 alias rake='noglob rake'
+
+# Customize to your needs...
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
 # Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
 rvm use default
