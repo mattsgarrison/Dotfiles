@@ -4,8 +4,7 @@ require 'irb/ext/save-history'
 require 'interactive_editor'
 require 'hirb'
 require 'wirble'
-require 'ap'
-#require 'maybeyoumeant'
+require 'awesome_print'
 
 Wirble.init
 Wirble.colorize

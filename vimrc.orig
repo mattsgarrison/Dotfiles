@@ -15,8 +15,9 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 " original repos on github
-"Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -27,8 +28,7 @@ Bundle 'surround.vim'
 Bundle 'ZoomWin'
 Bundle 'Syntastic'
 Bundle 'vim-indent-object'
-"Bundle 'Tagbar'
-Bundle 'git://github.com/dickeytk/status.vim.git'
+Bundle 'Tagbar'
 Bundle 'unimpaired.vim'
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
@@ -38,9 +38,6 @@ Bundle 'Markdown'
 Bundle 'jQuery'
 
 " explicit github repos
-Bundle 'git://github.com/tpope/vim-abolish.git'
-Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
-Bundle 'git://github.com/kana/vim-textobj-user.git'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
@@ -257,7 +254,7 @@ let g:JSLintHighlightErrorLine = 0
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-" % to bounce from do to end etc. Required for vim-textob-rubyblock
+" % to bounce from do to end etc.
 runtime! macros/matchit.vim
 
 " Include user's local vim config
