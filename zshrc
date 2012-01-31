@@ -9,8 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 #export ZSH_THEME="eastwood"
 #export ZSH_THEME="bira"
 #export ZSH_THEME="dst"
-export ZSH_THEME="tjkirch"
-#export ZSH_THEME="alanpeabody"
+export ZSH_THEME="alanpeabody"
 #export ZSH_THEME="random"
 
 # Set to this to use case-sensitive completion
