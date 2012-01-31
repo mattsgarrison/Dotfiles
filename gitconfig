@@ -13,6 +13,6 @@
 [alias]
 	d = difftool
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [difftool "vimdiff"]
-    cmd = vimdiff $LOCAL $REMOTE
+  cmd = vimdiff $LOCAL $REMOTE

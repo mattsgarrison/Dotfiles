@@ -50,7 +50,7 @@ Bundle 'git://github.com/kien/ctrlp.vim'
 Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'git://github.com/tpope/vim-markdown.git'
 Bundle 'git://github.com/juvenn/mustache.vim.git'
-
+Bundle 'git://github.com/briancollins/vim-jst.git'
 " ...
 
 filetype plugin indent on     " required! 
