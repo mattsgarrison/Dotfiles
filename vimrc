@@ -51,6 +51,7 @@ Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'git://github.com/tpope/vim-markdown.git'
 Bundle 'git://github.com/juvenn/mustache.vim.git'
 Bundle 'git://github.com/briancollins/vim-jst.git'
+Bundle 'git://github.com/mileszs/ack.vim.git'
 " ...
 
 filetype plugin indent on     " required! 
@@ -118,6 +119,9 @@ noremap <leader>y :CommandTFlush<cr>
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
+
+map <leader>a :Ack<cr>
+" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
