@@ -52,9 +52,12 @@ else
     ssh-add
 fi
 
-# Customize to your needs...
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+# RVM config:
+#[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 # Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
 rvm use default
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
+#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
