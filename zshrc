@@ -26,17 +26,40 @@ export ZSH_THEME="dieter"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow ruby bundle rails3)
+plugins=(git ruby heroku gem bundle rails3)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.rake_completion.zsh
+#source $HOME/.rake_completion.zsh
 # I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
 PATH="$HOME/bin:$PATH"
-export RACK_ENV="development"
-export RAILS_ENV="development"
+#export RACK_ENV="development"
+#export RAILS_ENV="development"
+#export BYOBU_PREFIX=`brew --prefix`
 
 # ZSH confuses bracket globbing with Rake's parameter passing style
 alias rake='noglob rake'
+
+
+_rake_does_task_list_need_generating () {
+  if [ ! -f .rake_tasks ]; then return 0;
+  else
+    accurate=$(stat -f%m .rake_tasks)
+    changed=$(stat -f%m Rakefile)
+    return $(expr $accurate '>=' $changed)
+  fi
+}
+
+_rake () {
+  if [ -f Rakefile ]; then
+    if _rake_does_task_list_need_generating; then
+      echo "\nGenerating .rake_tasks..." > /dev/stderr
+      rake --silent --tasks | cut -d " " -f 2 > .rake_tasks
+    fi
+    compadd `cat .rake_tasks`
+  fi
+}
+
+compdef _rake rake
 
 # Tired of typing my ssh key password 20 times an hour.
 if [ -f ~/.agent.env ] ; then
