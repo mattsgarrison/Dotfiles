@@ -32,6 +32,8 @@ source $ZSH/oh-my-zsh.sh
 #source $HOME/.rake_completion.zsh
 # I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
 PATH="$HOME/bin:$PATH"
+# For jruby, this setting almost halves startup time of the JVM by setting it to 32bit client mode.
+export JAVA_OPTS="-d32"
 #export RACK_ENV="development"
 #export RAILS_ENV="development"
 #export BYOBU_PREFIX=`brew --prefix`
