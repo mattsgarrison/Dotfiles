@@ -20,7 +20,6 @@ Bundle 'Lokaltog/vim-easymotion'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'rails.vim'
 Bundle 'NERD_tree-Project'
 Bundle 'SuperTab'
 Bundle 'surround.vim'
@@ -38,6 +37,9 @@ Bundle 'Markdown'
 Bundle 'jQuery'
 
 " explicit github repos
+Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'git://github.com/tpope/vim-fugitive.git'
+Bundle 'git://github.com/gregsexton/gitv.git'
 Bundle 'git://github.com/tpope/vim-abolish.git'
 Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 Bundle 'git://github.com/kana/vim-textobj-user.git'
