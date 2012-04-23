@@ -20,7 +20,6 @@ Bundle 'Lokaltog/vim-easymotion'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'rails.vim'
 Bundle 'NERD_tree-Project'
 Bundle 'SuperTab'
 Bundle 'surround.vim'
@@ -28,7 +27,7 @@ Bundle 'ZoomWin'
 Bundle 'Syntastic'
 Bundle 'vim-indent-object'
 "Bundle 'Tagbar'
-Bundle 'git://github.com/dickeytk/status.vim.git'
+"Bundle 'git://github.com/dickeytk/status.vim.git'
 Bundle 'unimpaired.vim'
 Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
@@ -38,11 +37,15 @@ Bundle 'Markdown'
 Bundle 'jQuery'
 
 " explicit github repos
+Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'git://github.com/tpope/vim-fugitive.git'
+Bundle 'git://github.com/gregsexton/gitv.git'
 Bundle 'git://github.com/tpope/vim-abolish.git'
 Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 Bundle 'git://github.com/kana/vim-textobj-user.git'
 Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
+"Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
+Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/tpope/vim-haml'
 Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
@@ -65,7 +68,6 @@ set history=1000
 set visualbell
 " Set encoding
 set encoding=utf-8
-
 " Whitespace stuff
 set nowrap
 set tabstop=2
