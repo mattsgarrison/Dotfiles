@@ -3,9 +3,6 @@
 	name = Matt Garrison
 [core]
 	editor = vim
-[github]
-	user = mattsgarrison
-	token = 8f28ec92baac1a443f19f9bd9bdc4fba
 [diff]
 	tool = vimdiff
 [difftool]
