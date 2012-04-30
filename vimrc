@@ -43,7 +43,8 @@ Bundle 'git://github.com/gregsexton/gitv.git'
 Bundle 'git://github.com/tpope/vim-abolish.git'
 Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 Bundle 'git://github.com/kana/vim-textobj-user.git'
-Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://github.com/kien/ctrlp.vim.git'
 "Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
 Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
@@ -112,10 +113,10 @@ set wildcharm=<C-Z>
 nnoremap <F10> :b <C-Z>
 
 " Command-T configuration
-let g:CommandTMaxHeight=20
-set wildignore+=*.o,*.obj,.git,*.pyc
-noremap <leader>t :CommandT<cr>
-noremap <leader>y :CommandTFlush<cr>
+"let g:CommandTMaxHeight=20
+"set wildignore+=*.o,*.obj,.git,*.pyc
+"noremap <leader>t :CommandT<cr>
+"noremap <leader>y :CommandTFlush<cr>
 
 " bufExplorer configuration
 let g:bufExplorerDefaultHelp=0
@@ -123,7 +124,7 @@ let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
 
 map <leader>a :Ack<cr>
-" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -181,7 +182,7 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
-cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+"cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 map <silent> <F5> mmgg=G
 map <silent> <F5> <Esc> mmgg=G

@@ -1,7 +1,21 @@
 require 'rubygems'
 require 'irb/completion'
 require 'irb/ext/save-history'
-require 'interactive_editor'
+
+
+begin
+  require "pry"
+  Pry.start
+  exit
+rescue LoadError => e
+  warn "=> Unable to load pry"
+end
+
+begin
+  require 'interactive_editor'
+rescue
+  warn "=> Unable to load interactive_editor"
+end
 require 'hirb'
 require 'wirble'
 require 'awesome_print'
