@@ -242,6 +242,9 @@ set t_Co=256
 " Default color scheme
 color jellybeans
 
+" Tag current directory. Ruby specific.
+map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+
 " Define some default colors for the indent guide for terminal based vim
 hi IndentGuidesOdd  ctermbg=grey
 hi IndentGuidesEven ctermbg=darkgrey
