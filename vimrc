@@ -19,7 +19,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 " vim-scripts repos
 Bundle 'L9'
-Bundle 'FuzzyFinder'
 Bundle 'NERD_tree-Project'
 Bundle 'SuperTab'
 Bundle 'surround.vim'
@@ -35,7 +34,7 @@ Bundle 'vim-coffee-script'
 Bundle 'Sass'
 Bundle 'Markdown'
 Bundle 'jQuery'
-
+Bundle 'taglist.vim'
 " explicit github repos
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'git://github.com/tpope/vim-fugitive.git'
@@ -45,7 +44,6 @@ Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 Bundle 'git://github.com/kana/vim-textobj-user.git'
 "Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'git://github.com/kien/ctrlp.vim.git'
-"Bundle 'git://github.com/Lokaltog/vim-superstatus.git'
 Bundle 'https://github.com/Lokaltog/vim-powerline'
 Bundle 'git://github.com/pangloss/vim-javascript.git'
 Bundle 'git://github.com/tpope/vim-haml'
@@ -244,6 +242,9 @@ set t_Co=256
 " Default color scheme
 color jellybeans
 
+" Tag current directory. Ruby specific.
+map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+
 " Define some default colors for the indent guide for terminal based vim
 hi IndentGuidesOdd  ctermbg=grey
 hi IndentGuidesEven ctermbg=darkgrey
@@ -270,4 +271,7 @@ runtime! macros/matchit.vim
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
+endif
+if has("gui_running")
+    set guioptions=egmrt
 endif
