@@ -26,7 +26,7 @@ export ZSH_THEME="dieter"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby heroku gem bundle rails3 rake ssh-agent vundle)
+plugins=(git ruby heroku gem bundle rails3 rake screen ssh-agent vundle)
 
 source $ZSH/oh-my-zsh.sh
 #source $HOME/.rake_completion.zsh
