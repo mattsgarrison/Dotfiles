@@ -273,3 +273,6 @@ runtime! macros/matchit.vim
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+if has("gui_running")
+    set guioptions=egmrt
+endif
