@@ -38,7 +38,7 @@ export JRUBY_OPTS=--1.9
 #export RACK_ENV="development"
 #export RAILS_ENV="development"
 export BYOBU_PREFIX=`brew --prefix`
-
+export NODE_PATH="/usr/local/lib/node_modules"
 # RVM config:
 #[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
