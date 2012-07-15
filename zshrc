@@ -31,6 +31,7 @@ plugins=(git ruby heroku gem bundle rails3 rake screen ssh-agent vundle)
 source $ZSH/oh-my-zsh.sh
 #source $HOME/.rake_completion.zsh
 # I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
+PATH="/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 PATH="$HOME/bin:/usr/local/bin:$PATH"
 # For jruby, this setting almost halves startup time of the JVM by setting it to 32bit client mode.
 #export JAVA_OPTS="-d32"
