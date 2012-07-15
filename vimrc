@@ -54,6 +54,7 @@ Bundle 'git://github.com/tpope/vim-markdown.git'
 Bundle 'git://github.com/juvenn/mustache.vim.git'
 Bundle 'git://github.com/briancollins/vim-jst.git'
 Bundle 'git://github.com/mileszs/ack.vim.git'
+Bundle 'git://github.com/sjl/gundo.vim.git'
 " ...
 
 filetype plugin indent on     " required! 
