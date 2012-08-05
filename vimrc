@@ -123,7 +123,7 @@ let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
 
 map <leader>a :Ack<cr>
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
