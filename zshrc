@@ -35,7 +35,7 @@ PATH="/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 PATH="$HOME/bin:/usr/local/bin:$PATH"
 # For jruby, this setting almost halves startup time of the JVM by setting it to 32bit client mode.
 #export JAVA_OPTS="-d32"
-export JRUBY_OPTS=--1.9
+#export JRUBY_OPTS= '--1.9' # now the default in jruby 1.7
 #export RACK_ENV="development"
 #export RAILS_ENV="development"
 export BYOBU_PREFIX=`brew --prefix`
