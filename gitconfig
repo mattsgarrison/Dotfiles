@@ -1,8 +1,9 @@
 [user]
-	email = mattsgarrison@gmail.com
+	email = mattsgarrison@iconoclastlabs.com
 	name = Matt Garrison
 [core]
 	editor = vim
+	excludesfile = /Users/mattgarrison/.gitignore_global
 [diff]
 	tool = vimdiff
 [difftool]
@@ -13,3 +14,9 @@
   tool = vimdiff
 [difftool "vimdiff"]
   cmd = vimdiff $LOCAL $REMOTE
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

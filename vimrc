@@ -36,6 +36,7 @@ Bundle 'Markdown'
 Bundle 'jQuery'
 Bundle 'taglist.vim'
 " explicit github repos
+Bundle 'git://github.com/vim-ruby/vim-ruby.git'
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'git://github.com/tpope/vim-fugitive.git'
 Bundle 'git://github.com/gregsexton/gitv.git'
@@ -104,6 +105,11 @@ set noequalalways
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
+" Taglist configs
+set tags+=./tags
+map <leader>t :TlistToggle<CR>
+map <C-F12> :!ctags -R --exclude=.git --exclude=logs --exclude=doc .<CR>
+au BufRead,BufNewFile *.rb setlocal tags+=~/.vim/tags/ruby_and_gems
 
 " Map F5 to a buffers list
 ":nnoremap <F5> :buffers<CR>:buffer<Space>
@@ -123,7 +129,7 @@ let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
 
 map <leader>a :Ack<cr>
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -269,6 +275,14 @@ let macvim_hig_shift_movement = 1
 
 " % to bounce from do to end etc. Required for vim-textob-rubyblock
 runtime! macros/matchit.vim
+
+" enable vim-ruby
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))

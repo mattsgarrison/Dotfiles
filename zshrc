@@ -31,6 +31,7 @@ plugins=(git ruby heroku gem bundle rails3 rake screen ssh-agent vundle)
 source $ZSH/oh-my-zsh.sh
 #source $HOME/.rake_completion.zsh
 # I compiled my own vim into a local directory to get everything I wanted, add that to my path first.
+PATH="/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 PATH="$HOME/bin:/usr/local/bin:$PATH"
 # For jruby, this setting almost halves startup time of the JVM by setting it to 32bit client mode.
 #export JAVA_OPTS="-d32"
@@ -38,7 +39,8 @@ export JRUBY_OPTS=--1.9
 #export RACK_ENV="development"
 #export RAILS_ENV="development"
 export BYOBU_PREFIX=`brew --prefix`
-
+export NODE_PATH="/usr/local/lib/node_modules"
+export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 # RVM config:
 #[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
@@ -48,3 +50,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #eval "$(rbenv init -)"
 #echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+
+source $HOME/.aliases
