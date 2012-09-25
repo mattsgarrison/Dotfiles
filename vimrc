@@ -13,51 +13,60 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
-" original repos on github
-"Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-" vim-scripts repos
-Bundle 'L9'
+" --- Vim Feature Additions ---
 Bundle 'NERD_tree-Project'
+Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'SuperTab'
 Bundle 'surround.vim'
+" surrounds blocks of words with matching apotrophes and quotes
 Bundle 'ZoomWin'
-Bundle 'Syntastic'
+" zooms in on a single pane when split already
 Bundle 'vim-indent-object'
-"Bundle 'Tagbar'
-"Bundle 'git://github.com/dickeytk/status.vim.git'
+" Enhances the indention rules of vim
 Bundle 'unimpaired.vim'
+" Highlights matching brackets and closing tags
 Bundle 'The-NERD-tree'
+" File Tree
 Bundle 'The-NERD-Commenter'
-Bundle 'vim-coffee-script'
-Bundle 'Sass'
-Bundle 'Markdown'
-Bundle 'jQuery'
+" Block commenting
 Bundle 'taglist.vim'
-" explicit github repos
-Bundle 'git://github.com/vim-ruby/vim-ruby.git'
-Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'git://github.com/tpope/vim-fugitive.git'
-Bundle 'git://github.com/gregsexton/gitv.git'
-Bundle 'git://github.com/tpope/vim-abolish.git'
-Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
-Bundle 'git://github.com/kana/vim-textobj-user.git'
-"Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'git://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/Lokaltog/vim-powerline'
-Bundle 'git://github.com/pangloss/vim-javascript.git'
-Bundle 'git://github.com/tpope/vim-haml'
-Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
+" Taglist classviewer
 Bundle 'git://github.com/kien/ctrlp.vim'
-Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
-Bundle 'git://github.com/tpope/vim-markdown.git'
-Bundle 'git://github.com/juvenn/mustache.vim.git'
-Bundle 'git://github.com/briancollins/vim-jst.git'
-Bundle 'git://github.com/mileszs/ack.vim.git'
+" Ctrl-P fuzzy searcher.
 Bundle 'git://github.com/sjl/gundo.vim.git'
-" ...
-
+" Visual Undo Tree
+Bundle 'git://github.com/mileszs/ack.vim.git'
+" Awesome grep replacement
+Bundle 'git://github.com/gregsexton/gitv.git'
+" Git tree view
+Bundle 'git://github.com/tpope/vim-abolish.git'
+" Helps reduce spelling problems if tags are built
+Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
+" Selects/closes Ruby blocks better
+Bundle 'git://github.com/kana/vim-textobj-user.git'
+" vim-textobj-rubyblock dependency
+Bundle 'git://github.com/Lokaltog/vim-powerline'
+" Awesome status bar enhancement
+"" --- Syntax Helpers ---
+Bundle 'Syntastic'
+" Mass syntax highlighting plugin
+Bundle 'git://github.com/tpope/vim-markdown.git'
+" Highlights Markdown syntax
+Bundle 'git://github.com/juvenn/mustache.vim.git'
+" Highlights Mustache syntax
+Bundle 'git://github.com/vim-ruby/vim-ruby.git'
+" Ruby Helper
+Bundle 'git://github.com/tpope/vim-rails.git'
+" Rails helper
+Bundle 'git://github.com/briancollins/vim-jst.git'
+" Highlights JST/EJS syntax
+Bundle 'git://github.com/pangloss/vim-javascript.git'
+" Improved JS syntax indention
+Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
+" Awesome subtle indention guides
+" --- Unused but interesting ---
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'L9'
 filetype plugin indent on     " required! 
 
 set nocompatible
