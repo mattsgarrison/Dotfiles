@@ -1,1 +1,2 @@
 alias devstart='foreman start -f Procfile.development -e development.env'
+alias tagit='sh ~/Dotfiles/rvm_ctags.sh'
