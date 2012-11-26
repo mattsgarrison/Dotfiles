@@ -4,7 +4,7 @@
 "
 set clipboard=autoselect,exclude:cons\\\|linux\\\|screen
 filetype off
-
+set shortmess+=I
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'NERD_tree-Project'
 Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
 Bundle 'SuperTab'
+Bundle 'rake.vim'
 Bundle 'surround.vim'
 " surrounds blocks of words with matching apotrophes and quotes
 Bundle 'ZoomWin'
@@ -140,7 +141,7 @@ let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
 
 map <leader>a :Ack<cr>
-" let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
