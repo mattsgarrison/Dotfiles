@@ -30,6 +30,8 @@ Bundle 'The-NERD-tree'
 Bundle 'The-NERD-Commenter'
 " Block commenting
 Bundle 'taglist.vim'
+" Git features
+Bundle 'fugitive.vim'
 " Taglist classviewer
 Bundle 'git://github.com/kien/ctrlp.vim'
 " Ctrl-P fuzzy searcher.
