@@ -299,11 +299,3 @@ filetype plugin on    " Enable filetype-specific plugins
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-if has("gui_running")
-    set guioptions=egmrt
-endif
-if has("autocmd")
-  au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-  au VimLeave    * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-endif
