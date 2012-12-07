@@ -3,6 +3,7 @@ require 'fileutils'
 namespace :monitor do
   desc "Visual Monitor of Network Traffic"
   task :slurm do
+    # sudo apt-get install slurm
     system 'slurm -i eth0'
   end
 
@@ -13,7 +14,14 @@ namespace :monitor do
 
   desc "Launch Nethogs to watch process network usage"
   task :nethogs do
+    # sudo apt-get install nethogs
     system 'sudo nethogs'
+  end
+
+  desc "Launch iptraf to monitor network interface in detail"
+  task :iptraf do
+    # sudo apt-get install iptraf
+    system 'sudo iptraf'
   end
 end
 
