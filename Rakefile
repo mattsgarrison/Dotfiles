@@ -10,6 +10,11 @@ namespace :monitor do
   task :dstat do
     system 'dstat'
   end
+
+  desc "Launch Nethogs to watch process network usage"
+  task :nethogs do
+    system 'sudo nethogs'
+  end
 end
 
 namespace :utils do
