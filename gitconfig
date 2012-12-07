@@ -10,6 +10,8 @@
 	prompt = false
 [alias]
 	d = difftool
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 [merge]
   tool = vimdiff
 [difftool "vimdiff"]
