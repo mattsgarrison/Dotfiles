@@ -17,23 +17,9 @@ rescue
   warn "=> Unable to load interactive_editor"
 end
 require 'hirb'
-require 'wirble'
 require 'awesome_print'
 
-Wirble.init
-Wirble.colorize
-
-colors = Wirble::Colorize.colors.merge({
-  :object_class => :purple,
-  :symbol => :purple,
-  :symbol_prefix => :purple
-})
-Wirble::Colorize.colors = colors
-
-
 Hirb.enable
-
-
 
 class Object
   # Return only the methods not present on basic objects
