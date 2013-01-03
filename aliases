@@ -2,3 +2,4 @@ alias devstart='foreman start -f Procfile.development -e development.env'
 alias tagit='sh ~/Dotfiles/rvm_ctags.sh'
 alias make="nice make -j $(grep 'processor' /proc/cpuinfo | wc -l)"
 alias grep='grep --color=auto'
+alias tbr='torquebox run -b 0.0.0.0'

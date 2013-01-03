@@ -15,7 +15,7 @@ Bundle 'gmarik/vundle'
 
 " --- Vim Feature Additions ---
 Bundle 'NERD_tree-Project'
-Bundle 'git://github.com/vim-scripts/Color-Sampler-Pack.git'
+Bundle 'git://github.com/vim-scripts/Colour-Sampler-Pack.git'
 Bundle 'SuperTab'
 Bundle 'rake.vim'
 Bundle 'surround.vim'
@@ -55,8 +55,6 @@ Bundle 'Syntastic'
 " Mass syntax highlighting plugin
 Bundle 'git://github.com/tpope/vim-markdown.git'
 " Highlights Markdown syntax
-Bundle 'git://github.com/juvenn/mustache.vim.git'
-" Highlights Mustache syntax
 Bundle 'git://github.com/vim-ruby/vim-ruby.git'
 " Ruby Helper
 Bundle 'git://github.com/tpope/vim-rails.git'
