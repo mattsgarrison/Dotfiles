@@ -23,6 +23,11 @@ namespace :monitor do
     # sudo apt-get install iptraf
     system 'sudo iptraf'
   end
+
+  desc "Launch goaccess Apache log analyzer"
+  task :goaccess do
+    system 'goaccess'
+  end
 end
 
 namespace :utils do
