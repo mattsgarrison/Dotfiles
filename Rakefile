@@ -29,10 +29,6 @@ namespace :monitor do
     system 'goaccess'
   end
 
-  desc "Save all apt packages installed on a system"
-  task :aptsave do
-    system %W[aptitude search '!~M ~i' | awk -F " " '{ print "apt-get -y install " $2 }' > aptshell.sh]
-  end
 end
 
 namespace :utils do
@@ -40,6 +36,11 @@ namespace :utils do
   desc "Find large files on a linux system"
   task :find_large_files do
     system 'find . -size +20000k -exec du -h {} \;'
+  end
+
+  desc "Save all apt packages installed on a system"
+  task :aptsave do
+    system %W[aptitude search '!~M ~i' | awk -F " " '{ print "apt-get -y install " $2 }' > aptshell.sh]
   end
 end
 
