@@ -31,7 +31,7 @@ namespace :monitor do
 
   desc "Save all apt packages installed on a system"
   task :aptsave do
-    system 'aptitude search '!~M ~i' | awk -F " " '{ print "apt-get -y install " $2 }' > aptshell.sh'
+    system %W[aptitude search '!~M ~i' | awk -F " " '{ print "apt-get -y install " $2 }' > aptshell.sh]
   end
 end
 
