@@ -35,7 +35,9 @@ PATH="/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 PATH="$HOME/bin:/usr/local/bin:$PATH"
 # For jruby, this setting almost halves startup time of the JVM by setting it to 32bit client mode.
 #export JAVA_OPTS="-d32"
-export JRUBY_OPTS="-Xcompile.invokedynamic=true"
+export JRUBY_OPTS="-J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.invokedynamic=true"
+export JAVACMD=$(which drip)
+export DRIP_INIT_CLASS=org.jruby.main.DripMain
 #export JAVACMD=drip
 #export RACK_ENV="development"
 #export RAILS_ENV="development"
@@ -44,12 +46,12 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 # RVM config:
 #[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 # Had an issue with RVM not defaulting or initializing correctly. This forces it to be correct on startup.
-rvm use default
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#rvm use default
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 
 # Better manual pages (uses -help as fallback if no man page exists)

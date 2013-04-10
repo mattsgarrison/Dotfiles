@@ -1,5 +1,11 @@
 require 'pathname'
 require 'fileutils'
+namespace :btmm do
+  desc "Find all BTMM computers"
+  task :list do
+    system 'dns-sd -B _ssh 1031349116.members.btmm.icloud.com'
+  end
+end
 namespace :monitor do
   desc "Visual Monitor of Network Traffic"
   task :slurm do
