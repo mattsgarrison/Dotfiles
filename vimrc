@@ -44,6 +44,8 @@ Bundle 'git://github.com/gregsexton/gitv.git'
 " Git tree view
 Bundle 'git://github.com/tpope/vim-abolish.git'
 " Helps reduce spelling problems if tags are built
+Bundle 'git://github.com/airblade/vim-gitgutter.git'
+" Adds git status to vim
 Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 " Selects/closes Ruby blocks better
 Bundle 'git://github.com/kana/vim-textobj-user.git'
@@ -65,6 +67,8 @@ Bundle 'git://github.com/pangloss/vim-javascript.git'
 " Improved JS syntax indention
 Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
 " Awesome subtle indention guides
+"Bundle 'Valloric/YouCompleteMe' 
+" YouCompleteMe, Fast Fuzzy-Search Code Completion for C languages
 " --- Unused but interesting ---
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'L9'
