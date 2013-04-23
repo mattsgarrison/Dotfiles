@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-export ZSH_THEME="dieter"
+export ZSH_THEME="crunch"
 #export ZSH_THEME="eastwood"
 #export ZSH_THEME="bira"
 #export ZSH_THEME="dst"
@@ -13,7 +13,7 @@ export ZSH_THEME="dieter"
 #export ZSH_THEME="random"
 
 # oh-my-zsh plugins
-plugins=(git ruby heroku gem bundle rails3 rake screen sublime ssh-agent vundle zeus)
+plugins=(git ruby heroku gem rbenv bundler rails3 rake screen sublime ssh-agent vundle zeus)
 
 source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.rbenv/bin:$$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"

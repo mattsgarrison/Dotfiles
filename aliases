@@ -3,3 +3,13 @@ alias tagit='sh ~/Dotfiles/rvm_ctags.sh'
 alias make="nice make -j $(grep 'processor' /proc/cpuinfo | wc -l)"
 alias grep='grep --color=auto'
 alias tbr='torquebox run -b 0.0.0.0 --jvm-options=-Xmx1024m'
+# Suffix aliases to set default apps to open filetypes with
+alias -s conf=vim
+alias -s rb=vim
+alias -s ru=vim
+alias -s haml=vim
+alias -s scss=vim
+alias -s rdoc=vim
+alias -s txt=vim
+alias -s md=vim
+alias -s readme=vim
