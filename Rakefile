@@ -48,6 +48,13 @@ namespace :utils do
   task :aptsave do
     system %W[aptitude search '!~M ~i' | awk -F " " '{ print "apt-get -y install " $2 }' > aptshell.sh]
   end
+
+  desc "Gifify a Movie"
+  task :gifify do
+    #brew install ffmpeg
+    #brew install gifsicle
+    #ffmpeg -i in.mov -pix_fmt rgb24 -f gif - | gifsicle -O3 -d3 > out.gif
+  end
 end
 
 #This assumes this script is your home directory level Rakefile
