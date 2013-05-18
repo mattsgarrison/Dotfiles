@@ -256,7 +256,7 @@ set modeline
 set modelines=10
 
 " Remap backtick to Esc
-:imap ` <Esc>
+":imap ` <Esc>
 " Map double-tap Esc to clear search highlights
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " Set color mode for 256colors

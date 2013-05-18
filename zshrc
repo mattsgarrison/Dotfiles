@@ -16,7 +16,7 @@ export ZSH_THEME="crunch"
 plugins=(git ruby heroku gem rbenv bundler rails3 rake screen sublime ssh-agent vundle zeus)
 
 source $ZSH/oh-my-zsh.sh
-export PATH="$HOME/.rbenv/bin:$$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 export JRUBY_OPTS="-J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.invokedynamic=true"
 export JAVACMD=$(which drip)
 export DRIP_INIT_CLASS=org.jruby.main.DripMain
