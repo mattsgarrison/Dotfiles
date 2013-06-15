@@ -13,7 +13,7 @@ export ZSH_THEME="crunch"
 #export ZSH_THEME="random"
 
 # oh-my-zsh plugins
-plugins=(git ruby heroku gem rbenv bundler rails3 rake screen sublime ssh-agent vundle zeus)
+plugins=(git ruby heroku gem rbenv bundler rails3 screen sublime ssh-agent vundle zeus)
 
 source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
