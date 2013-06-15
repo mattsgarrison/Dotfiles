@@ -22,6 +22,7 @@ export JAVACMD=$(which drip)
 export DRIP_INIT_CLASS=org.jruby.main.DripMain
 export BYOBU_PREFIX=`brew --prefix`
 export NODE_PATH="/usr/local/lib/node_modules"
+export VAGRANT_DEFAULT_PROVIDER='vmware_fusion'
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Better manual pages (uses -help as fallback if no man page exists)
 man () {
