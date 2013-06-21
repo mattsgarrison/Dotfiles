@@ -2,7 +2,7 @@ require 'rubygems'
 require 'irb/completion'
 require 'irb/ext/save-history'
 
-
+warn "Loading custom irbrc"
 
 begin
   require 'interactive_editor'
@@ -13,10 +13,10 @@ begin
   require 'hirb'
   Hirb.enable
   extend Hirb::Console
-  
+
   module DatabaseHelpers
     extend self
-  
+
     def tables
       Hirb::Console.render_output ActiveRecord::Base.connection.tables.map{|e|[e]},{
         :class   => Hirb::Helpers::AutoTable,
@@ -24,7 +24,7 @@ begin
       }
       true
     end
-  
+
     def table(which)
       Hirb::Console.render_output ActiveRecord::Base.connection.columns(which).map{ |e|
         [e.name, e.type, e.sql_type, e.limit, e.default, e.scale, e.precision, e.primary, e.null]
@@ -34,7 +34,7 @@ begin
       }
       true
     end
-  
+
     def counts
       Hirb::Console.render_output ActiveRecord::Base.connection.tables.map{|e|
         [e, ActiveRecord::Base.connection.select_value("SELECT COUNT(*) FROM #{e}")]
@@ -44,7 +44,7 @@ begin
       }
       true
     end
-  
+
     # ...
   end
 rescue
@@ -62,7 +62,6 @@ class Object
   def interesting_methods
     (self.methods - Object.new.methods).sort
   end
-
 end
 
 def db
