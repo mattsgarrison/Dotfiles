@@ -3,13 +3,6 @@ require 'irb/completion'
 require 'irb/ext/save-history'
 
 
-begin
-  require "pry"
-  Pry.start
-  exit
-rescue LoadError => e
-  warn "=> Unable to load pry"
-end
 
 begin
   require 'interactive_editor'
@@ -68,6 +61,13 @@ end
 
 def sql(query)
     ActiveRecord::Base.connection.select_all(query)
+end
+begin
+  require "pry"
+  Pry.start
+  exit
+rescue LoadError => e
+  warn "=> Unable to load pry"
 end
 
 #MaybeYouMeant::Config.call_nearby = false
