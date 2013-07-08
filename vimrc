@@ -5,76 +5,74 @@
 set clipboard=autoselect,exclude:cons\\\|linux\\\|screen
 filetype off
 set shortmess+=I
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set nocompatible               " Be iMproved
 
-" let Vundle manage Vundle 
-"  git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-" required! 
-Bundle 'gmarik/vundle'
+if has('vim_starting')
+ set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-" --- Vim Feature Additions ---
-Bundle 'NERD_tree-Project'
-Bundle 'git://github.com/vim-scripts/Colour-Sampler-Pack.git'
-Bundle 'SuperTab'
-Bundle 'rake.vim'
-Bundle 'surround.vim'
-" surrounds blocks of words with matching apotrophes and quotes
-Bundle 'ZoomWin'
-" zooms in on a single pane when split already
-Bundle 'vim-indent-object'
-" Enhances the indention rules of vim
-Bundle 'unimpaired.vim'
-" Highlights matching brackets and closing tags
-Bundle 'The-NERD-tree'
-" File Tree
-Bundle 'The-NERD-Commenter'
-" Block commenting
-Bundle 'taglist.vim'
-" Git features
-Bundle 'fugitive.vim'
-" Taglist classviewer
-Bundle 'git://github.com/kien/ctrlp.vim'
-" Ctrl-P fuzzy searcher.
-Bundle 'git://github.com/sjl/gundo.vim.git'
-" Visual Undo Tree
-Bundle 'git://github.com/mileszs/ack.vim.git'
-" Awesome grep replacement
-Bundle 'git://github.com/gregsexton/gitv.git'
-" Git tree view
-Bundle 'git://github.com/tpope/vim-abolish.git'
-" Helps reduce spelling problems if tags are built
-Bundle 'git://github.com/airblade/vim-gitgutter.git'
-" Adds git status to vim
-Bundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
-" Selects/closes Ruby blocks better
-Bundle 'git://github.com/kana/vim-textobj-user.git'
-" vim-textobj-rubyblock dependency
-Bundle 'git://github.com/Lokaltog/vim-powerline'
-" Awesome status bar enhancement
-"" --- Syntax Helpers ---
-Bundle 'Syntastic'
-" Mass syntax highlighting plugin
-Bundle 'git://github.com/tpope/vim-markdown.git'
-" Highlights Markdown syntax
-Bundle 'git://github.com/vim-ruby/vim-ruby.git'
-" Ruby Helper
-Bundle 'git://github.com/tpope/vim-rails.git'
-" Rails helper
-Bundle 'git://github.com/briancollins/vim-jst.git'
-" Highlights JST/EJS syntax
-Bundle 'git://github.com/pangloss/vim-javascript.git'
-" Improved JS syntax indention
-Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
-" Awesome subtle indention guides
-"Bundle 'Valloric/YouCompleteMe' 
-" YouCompleteMe, Fast Fuzzy-Search Code Completion for C languages
-" --- Unused but interesting ---
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'L9'
-filetype plugin indent on     " required! 
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-set nocompatible
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Recommended to install
+" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+NeoBundle 'Shougo/unite.vim'
+
+NeoBundle 'git://github.com/vim-scripts/Colour-Sampler-Pack.git'
+NeoBundle 'gmarik/sudo-gui.vim'
+NeoBundle 'SuperTab'
+NeoBundle 'rake.vim'
+NeoBundle 'surround.vim'
+NeoBundle 'ZoomWin'
+NeoBundle 'vim-indent-object'
+NeoBundle 'unimpaired.vim'
+NeoBundle 'NERD_tree-Project'
+NeoBundle 'The-NERD-tree'
+NeoBundle 'The-NERD-Commenter'
+NeoBundle 'taglist.vim'
+" NeoBundle 'git://github.com/sjl/gundo.vim.git'
+NeoBundle 'git://github.com/tpope/vim-abolish.git'
+NeoBundle 'git://github.com/airblade/vim-gitgutter.git'
+NeoBundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
+NeoBundle 'git://github.com/kana/vim-textobj-user.git'
+
+
+
+NeoBundle 'bling/vim-airline'
+
+" Syntax Helpers
+NeoBundle 'Syntastic'
+NeoBundle 'git://github.com/tpope/vim-markdown.git'
+NeoBundle 'git://github.com/vim-ruby/vim-ruby.git'
+NeoBundle 'git://github.com/tpope/vim-rails.git'
+NeoBundle 'git://github.com/briancollins/vim-jst.git'
+NeoBundle 'git://github.com/pangloss/vim-javascript.git'
+NeoBundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
+NeoBundle 'Valloric/YouCompleteMe' 
+
+" ...
+
+filetype plugin indent on     " Required!
+"
+" Brief help
+" :NeoBundleList          - list configured bundles
+" :NeoBundleInstall(!)    - install(update) bundles
+" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+
+" Installation check.
+NeoBundleCheck
+
+
 set title
 set number
 set ruler
@@ -142,8 +140,6 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <leader>b :BufExplorer<cr>
 
-map <leader>a :Ack<cr>
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -203,6 +199,32 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 "cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+
+" Unite.vim awesomeness
+"nnoremap <space>/ :Unite grep:.<CR>
+"nnoremap <C-p> :Unite file_rec/async<CR>
+
+
+" Unite
+let g:unite_source_history_yank_enable = 1
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
+nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   file<cr>
+nnoremap <leader>r :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <leader>o :<C-u>Unite -no-split -buffer-name=outline -start-insert outline<cr>
+nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
+nnoremap <leader>e :<C-u>Unite -no-split -buffer-name=buffer  buffer<cr>
+
+" Custom mappings for the unite buffer
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+  " Play nice with supertab
+  let b:SuperTabDisabled=1
+  " Enable navigation with control-j and control-k in insert mode
+  imap <buffer> <C-j>   <Plug>(unite_select_next_line)
+  imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
+endfunction
+
 
 map <silent> <F5> mmgg=G
 map <silent> <F5> <Esc> mmgg=G
