@@ -1,6 +1,13 @@
 require 'interactive_editor'
-
+load '~/Dotfiles/irbrc'
+warn "Loading custom pryrc"
 Pry.config.editor = "vim"
-Pry.commands.alias_command 'c', 'continue'
-Pry.commands.alias_command 's', 'step'
-Pry.commands.alias_command 'n', 'next'
+
+begin
+  require 'pry-debugger'
+  Pry.commands.alias_command 'c', 'continue'
+  Pry.commands.alias_command 's', 'step'
+  Pry.commands.alias_command 'n', 'next'
+rescue
+  warn "=> Unable to load pry-debugger"
+end
