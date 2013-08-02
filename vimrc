@@ -40,6 +40,7 @@ NeoBundle 'NERD_tree-Project'
 NeoBundle 'The-NERD-tree'
 NeoBundle 'The-NERD-Commenter'
 NeoBundle 'taglist.vim'
+NeoBundle 'ag.vim'
 " NeoBundle 'git://github.com/sjl/gundo.vim.git'
 NeoBundle 'git://github.com/tpope/vim-abolish.git'
 NeoBundle 'git://github.com/airblade/vim-gitgutter.git'
@@ -49,6 +50,7 @@ NeoBundle 'git://github.com/kana/vim-textobj-user.git'
 
 
 NeoBundle 'bling/vim-airline'
+NeoBundle 'bling/vim-bufferline'
 
 " Syntax Helpers
 NeoBundle 'Syntastic'
@@ -204,6 +206,9 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 "nnoremap <space>/ :Unite grep:.<CR>
 "nnoremap <C-p> :Unite file_rec/async<CR>
 
+" bufferline config
+let g:bufferline_echo=0
+set statusline=%{bufferline#generate_string()}
 
 " Unite
 let g:unite_source_history_yank_enable = 1
