@@ -28,6 +28,7 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 NeoBundle 'Shougo/unite.vim'
 
+NeoBundle 'sudo.vim'
 NeoBundle 'git://github.com/vim-scripts/Colour-Sampler-Pack.git'
 NeoBundle 'gmarik/sudo-gui.vim'
 NeoBundle 'SuperTab'
