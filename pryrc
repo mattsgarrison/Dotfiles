@@ -11,3 +11,10 @@ begin
 rescue
   warn "=> Unable to load pry-debugger"
 end
+
+begin 
+  require "awesome_print"
+  AwesomePrint.pry!
+rescue
+  warn "=> Unable to load awesome_print"
+end
