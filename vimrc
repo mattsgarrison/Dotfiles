@@ -1,20 +1,14 @@
-" Prevent vim from trying to connect to the X server when connecting
-" from home, which causes a startup delay of about 14 seconds. I
-" usually connect from home via screen.
-"
-set clipboard=autoselect,exclude:cons\\\|linux\\\|screen
-filetype off
-set shortmess+=I
 set nocompatible               " Be iMproved
 
 if has('vim_starting')
- set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+
+filetype off
+set shortmess+=I
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
@@ -27,7 +21,6 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 NeoBundle 'Shougo/unite.vim'
-
 NeoBundle 'sudo.vim'
 NeoBundle 'git://github.com/vim-scripts/Colour-Sampler-Pack.git'
 NeoBundle 'gmarik/sudo-gui.vim'
@@ -43,12 +36,13 @@ NeoBundle 'The-NERD-Commenter'
 NeoBundle 'taglist.vim'
 NeoBundle 'ag.vim'
 " NeoBundle 'git://github.com/sjl/gundo.vim.git'
+NeoBundle 'git@github.com:majutsushi/tagbar.git'
 NeoBundle 'git://github.com/tpope/vim-abolish.git'
 NeoBundle 'git://github.com/airblade/vim-gitgutter.git'
 NeoBundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 NeoBundle 'git://github.com/kana/vim-textobj-user.git'
-
-
+NeoBundle 'git@github.com:Townk/vim-autoclose.git'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bling/vim-bufferline'
@@ -61,27 +55,22 @@ NeoBundle 'git://github.com/tpope/vim-rails.git'
 NeoBundle 'git://github.com/briancollins/vim-jst.git'
 NeoBundle 'git://github.com/pangloss/vim-javascript.git'
 NeoBundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
-NeoBundle 'Valloric/YouCompleteMe' 
-
-" ...
-
-filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"NeoBundle 'Valloric/YouCompleteMe' 
 
 " Installation check.
 NeoBundleCheck
 
+filetype plugin indent on     " detect file types
 
 set title
 set number
-set ruler
-syntax on
-set history=1000
-set visualbell
+set ruler                     " Show the ruler
+set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
+"set showcmd                   " Show partial commands in the statusline
+"set spell spelllang=en_us
+syntax on                     " Turn on syntax highlighting
+set history=1000              " Store more history
+set visualbell                " Flash the terminal for notifications
 " Set encoding
 set encoding=utf-8
 " Whitespace stuff
@@ -89,12 +78,15 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab
+set expandtab                 " Tabs are evil
 set list listchars=tab:\ \ ,trail:·
+set scrolljump=5              " Scroll 5 lines when bottom of page is reached
+set scrolloff=3               " Minimum lines around the cursor
+
 
 " Searching
-set hlsearch
-set incsearch
+set hlsearch                  " highlight search
+set incsearch                 " search as you type
 " Toggle on/off showing whitespace
 nmap <silent> <leader>s :silent :nohlsearch<CR>
 
@@ -122,8 +114,7 @@ map <Leader>n :NERDTreeToggle<CR>
 
 " Taglist configs
 set tags+=./tags
-map <leader>t :TlistToggle<CR>
-map <C-F12> :!ctags -R --exclude=.git --exclude=logs --exclude=doc .<CR>
+map <leader>tl :TlistToggle<CR>
 au BufRead,BufNewFile *.rb setlocal tags+=~/.vim/tags/ruby_and_gems
 
 " Map F5 to a buffers list
@@ -131,12 +122,6 @@ au BufRead,BufNewFile *.rb setlocal tags+=~/.vim/tags/ruby_and_gems
 set wildchar=<Tab> wildmenu wildmode=full
 set wildcharm=<C-Z>
 nnoremap <F10> :b <C-Z>
-
-" Command-T configuration
-"let g:CommandTMaxHeight=20
-"set wildignore+=*.o,*.obj,.git,*.pyc
-"noremap <leader>t :CommandT<cr>
-"noremap <leader>y :CommandTFlush<cr>
 
 " bufExplorer configuration
 let g:bufExplorerDefaultHelp=0
@@ -302,7 +287,7 @@ hi IndentGuidesEven ctermbg=darkgrey
 hi IndentGuidesOdd  ctermbg=grey
 hi IndentGuidesEven ctermbg=darkgrey
 
-" Let VIM handle multiple buffers nicely
+" Let VIM handle multiple buffers without saving first
 set hidden
 
 " Directories for swp files
@@ -317,13 +302,20 @@ let macvim_hig_shift_movement = 1
 
 " % to bounce from do to end etc. Required for vim-textob-rubyblock
 runtime! macros/matchit.vim
+" Ctags {
+  set tags=./tags;/,~/.vimtags
+" }
 
-" enable vim-ruby
-set nocompatible      " We're running Vim, not Vi!
-syntax on             " Enable syntax highlighting
-filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
+" AutoCloseTag {
+" Make it so AutoCloseTag works for xml and xhtml files as well
+  au FileType xhtml,xml ru ftplugin/html/autoclosetag.vim
+  nmap <Leader>ac <Plug>ToggleAutoCloseMappings
+" }
+
+" Set up some gui mvim/gvim configs
+if has("gui_running")
+    set guioptions=egmrt
+endif
 
 
 " Include user's local vim config
