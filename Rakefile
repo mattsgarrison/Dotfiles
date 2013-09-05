@@ -71,17 +71,12 @@ namespace :dotfiles do
     end
   end
 
-  desc "Install the Dotfiles repo"
-  task :install do
-    Dir.chdir(Pathname.new(__FILE__).dirname)
-    system 'git clone git@github.com:mattsgarrison/Dotfiles.git'
-  end
 end
 
 namespace :vim do
   desc "Install vundle"
   task :install_vundle do
     #should make it check for this directory first, or maybe prompt for it
-    system 'git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle'
+    system 'git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim'
   end
 end
