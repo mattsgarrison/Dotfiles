@@ -1,9 +1,5 @@
-[user]
-	email = matt@iconoclastlabs.com
-	name = Matt Garrison
 [core]
 	editor = vim
-	excludesfile = /Users/mattgarrison/.gitignore_global
 [diff]
 	tool = vimdiff
 [difftool]
