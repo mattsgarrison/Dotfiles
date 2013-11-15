@@ -55,6 +55,11 @@ namespace :utils do
     #brew install gifsicle
     #ffmpeg -i in.mov -pix_fmt rgb24 -f gif - | gifsicle -O3 -d3 > out.gif
   end
+
+  desc "Show octal permissions for directory"
+  task :octals do
+    system "stat -c '%A %a %h %U %G %s %y %n' *"
+  end
 end
 
 #This assumes this script is your home directory level Rakefile

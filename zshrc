@@ -16,7 +16,6 @@ export ZSH_THEME="crunch"
 plugins=(git ruby heroku gem rbenv bundler rails3 screen sublime ssh-agent vundle zeus)
 
 source $ZSH/oh-my-zsh.sh
-export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 export JRUBY_OPTS="-J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.invokedynamic=true"
 export JAVACMD=$(which drip)
 export DRIP_INIT_CLASS=org.jruby.main.DripMain
@@ -25,6 +24,7 @@ export NODE_PATH="/usr/local/lib/node_modules"
 export GOROOT="/usr/local/go/"
 export GOPATH="$HOME/.go/"
 export PATH=$PATH:$GOROOT/bin
+export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
 export VAGRANT_DEFAULT_PROVIDER='vmware_fusion'
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Better manual pages (uses -help as fallback if no man page exists)
@@ -54,3 +54,4 @@ extract () {
 }
 
 source $HOME/.aliases
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
