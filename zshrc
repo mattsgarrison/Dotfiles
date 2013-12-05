@@ -13,7 +13,7 @@ export ZSH_THEME="crunch"
 #export ZSH_THEME="random"
 
 # oh-my-zsh plugins
-plugins=(git ruby heroku gem rbenv bundler rails3 screen sublime ssh-agent vundle zeus)
+plugins=(git ruby heroku gem rbenv bundler rails screen sublime ssh-agent vundle zeus)
 
 source $ZSH/oh-my-zsh.sh
 export JRUBY_OPTS="-J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.invokedynamic=true"
