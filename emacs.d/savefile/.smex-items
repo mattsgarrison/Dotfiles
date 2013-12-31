@@ -1,0 +1,26 @@
+
+;; ----- smex-history -----
+(
+ sr-speedbar-toggle
+ eval-buffer
+ package-install
+ evil-mode
+ prelude-google
+ end-of-visual-line
+ dired
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 10)
+ (ag . 2)
+ (prelude-mode . 2)
+ (dired-virtual-mode . 1)
+ (dired . 2)
+ (end-of-visual-line . 1)
+ (prelude-google . 1)
+ (evil-mode . 2)
+ (eval-buffer . 4)
+ (evil-indent . 1)
+ (sr-speedbar-toggle . 2)
+)

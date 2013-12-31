@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Projects/web/crusher/" "~/Projects/LCPIC/CompletedTasks/")
