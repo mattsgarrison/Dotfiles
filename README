@@ -2,4 +2,23 @@ This is my customized configurations for my *nix environments so that all my mac
 
 The ZSH config relies on https://github.com/robbyrussell/oh-my-zsh.
 
-My vim configuration used Vundle (linked in the file). Symlink to ~/.vimrc, launch vim, type :BundleInstall
+My vim configuration uses NeoBundle to manage and install plugins.
+
+Emacs 24 install details for OSX
+---------------------------------
+
+brew install bazaar
+brew install emacs --HEAD --cocoa --srgb
+
+
+Updating SSL Certs to fix RubyGems error:
+-----------------------------------------
+Find path for certificate:
+
+`cert_file=$(ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE')`
+Generate certificate:
+
+`security find-certificate -a -p /Library/Keychains/System.keychain > "$cert_file"`
+`security find-certificate -a -p /System/Library/Keychains/SystemRootCertificates.keychain >> "$cert_file"``
+
+The whole code: https://github.com/wayneeseguin/rvm/blob/master/scripts/functions/osx-ssl-certs
