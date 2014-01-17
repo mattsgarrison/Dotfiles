@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/Projects/web/crusher/" "~/Projects/LCPIC/CompletedTasks/")
+("~/Dotfiles/" "~/Projects/Rumble/crusher/" "~/.emacs.d/" "~/Projects/web/crusher/" "~/Projects/LCPIC/CompletedTasks/")

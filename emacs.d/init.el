@@ -5,6 +5,13 @@
   (message "Prelude is powering up... Be patient, Master %s!" current-user)
 
   (when (version< emacs-version "24.1")
+    (require 'package)
+    (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+    (add-to-list 'package-archives
+                 '("marmalade" .
+                   "http://marmalade-repo.org/packages/"))
+    (package-initialize)
+
   (error "Prelude requires at least GNU Emacs 24.1"))
 
   (defvar prelude-dir (file-name-directory load-file-name)
@@ -111,10 +118,6 @@
   (setq powerline-color1 "grey22")
   (setq powerline-color2 "grey40")
 
-  ;; Make Speedbar open in the same frame
-  (require 'sr-speedbar)
-  ;;(speedbar 1)
-  (setq speedbar-use-images nil)
 
   ;; disable the toolbar
   (tool-bar-mode -1)
@@ -134,3 +137,17 @@
      kept-old-versions 2
      version-control t)       ; use versioned backups
 
+  ;; OSX Specific settings
+  (when (eq system-type 'darwin)
+    (setq ns-use-srgb-colorspace t)
+  )
+
+  ;; Turn on autocompletion
+  (require 'auto-complete)
+  (global-auto-complete-mode t)
+  (define-key ac-complete-mode-map "\t" 'ac-complete)
+  (define-key ac-complete-mode-map "\r" nil)
+
+  ;; Enable Robe for Ruby Mode
+  (add-hook 'ruby-mode-hook 'robe-mode)
+  (add-hook 'robe-mode-hook 'robe-ac-setup)

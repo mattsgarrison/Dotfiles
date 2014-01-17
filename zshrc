@@ -7,9 +7,9 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #export ZSH_THEME="crunch"
 #export ZSH_THEME="eastwood"
-#export ZSH_THEME="bira"
+export ZSH_THEME="bira"
 #export ZSH_THEME="dst"
-export ZSH_THEME="alanpeabody"
+#export ZSH_THEME="alanpeabody"
 #export ZSH_THEME="random"
 
 # oh-my-zsh plugins

@@ -2,3 +2,5 @@ sudo apt-get install silverseacher-ag
 fish
 Reading state inexitformation... Done
 exit
+ls
+dired
