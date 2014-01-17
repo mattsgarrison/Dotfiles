@@ -1,0 +1,41 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ (#("/Users/mattgarrison/Projects/Rumble/" 20 29 (face flx-highlight-face) 29 32 (face flx-highlight-face)) . "crusher/")
+ (#("/Users/mattgarrison/Projects/" 20 29 (face flx-highlight-face)) . #("Rumble/" 0 3 (face flx-highlight-face)))
+)
+
+;; ----- ido-work-directory-list -----
+(
+ #("/Users/mattgarrison/.emacs.d/" 20 29 (face flx-highlight-face))
+ #("/Users/mattgarrison/Projects/Rumble/crusher/" 20 29 (face flx-highlight-face) 29 32 (face flx-highlight-face))
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "Gemfile"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ (#("/Users/mattgarrison/.emacs.d/" 20 29 (face flx-highlight-face)) (21207 21998 0 0) "vendor/" "utils/" "tramp" "themes/" "savefile/" "sample/" "README.md" "projectile-bookmarks.eld" "prelude-modules.el~" "prelude-modules.el" "personal/" "modules/" "init.el" "elpa/" "core/" "CONTRIBUTING.md" "auto-save-list/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/" (21094 57548 0 0) "Shared/" "mattgarrison/" "amandacgarrison/" ".localized" "../" "./")
+
+ ("/Users/mattgarrison/" (21207 22062 0 0) "VirtualBox VMs/" "tmp/" "screen/" "Research/" "Rakefile" "Public/" "Projects/" "Pictures/" "node_modules/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Dotfiles/" "Documents/" "DistCertificates.p12" "Desktop/" "bin/" "bashrc" "Applications/" "AeroFS/" ".zshrc.pre-oh-my-zsh" ".zshrc.1339856019.old" ".zshrc" ".zsh_history" ".zsh_favlist" ".zsh-update" ".zlogin" ".zcompdump-Gödel-5.0.2" ".zcompdump-Gödel-4.3.11" ".zcompdump" ".Xauthority" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".unite/" ".trc" ".Trash/" ".tmux.conf" ".terminfo/" ".terminator/" ".tags" ".subversion/" ".ssh/" ".sqlite_history" ".screenrc" ".rubinius_last_error" ".rnd" ".README" ".rbx/" ".rbenv/" ".Rakefile" ".putty/" ".puppet/" ".psql_history" ".pryrc" ".pry_history" ".powconfig" ".pow/" ".passenger-enterprise/" ".passenger/" ".oh-my-zsh/" ".nvm/" ".npm/" ".node-gyp/" ".netrc" ".NERDTreeBookmarks" ".neocomplete/" ".m2/" ".lolcommits/" ".lldb-history" ".lighttable/" ".lein/" ".jline-clojure.main.history" ".itmstransporter/" ".irbrc" ".irb_history" ".irb-history" ".inkscape-etc/" ".hushlogin" ".htoprc" ".hgignore_global" ".heroku/" ".guard_history" ".go/" ".gitk" ".gitignore_global" ".gitconfig" ".gemrc" ".gem/" ".erc/" ".emacs~" ".emacs.old" ".emacs.d/" ".emacs-saves/" ".DS_Store" ".dropbox/" ".drip/" ".cups/" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bzr.log" ".byobu/" ".bundle/" ".bower/" ".bashrc.1339856019.old" ".bashrc" ".bash_login" ".bash_history" ".aliases" ".aerofs.aux.66918c/" ".adobe/" ".ackrc" "#temp#" "../" "./")
+
+ ("/Users/mattgarrison/Projects/Rumble/crusher/" (21207 21975 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "README.md" "Rakefile" "public/" "Procfile" "log/" "lib/" "Guardfile" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "Capfile" "bin/" "app/" ".gitignore" ".git/" ".DS_Store" ".bundle/" "../" "./")
+
+ ("/Users/mattgarrison/Projects/Rumble/crusher/app/" (21113 52240 0 0) "workers/" "views/" "models/" "mailers/" "jobs/" "helpers/" "controllers/" "assets/" ".DS_Store" "../" "./")
+
+ ("/Users/mattgarrison/Projects/Rumble/crusher/app/controllers/" (21202 56735 0 0) "worker_controller.rb" "users_controller.rb" "sessions_controller.rb" "repo/" "home_controller.rb" "concerns/" "application_controller.rb" ".DS_Store" ".#home_controller.rb" "../" "./")
+
+ (#("/Users/mattgarrison/Projects/Rumble/" 20 29 (face flx-highlight-face) 29 32 (face flx-highlight-face)) (21132 12732 0 0) "vagrant-docker-rails/" "rumble_provisioner/" "ImageOptim/" "crusher_vagrant/" "crusher/" ".DS_Store" "../" "./")
+
+ (#("/Users/mattgarrison/Projects/" 20 29 (face flx-highlight-face)) (21199 20826 0 0) "work_damn_you/" "web/" "vagrant-docker-rails/" "tmp/" "Rumble/" "lib/" "homework/" "go/" "fun/" "forks/" "bowser/" "betterness/" "apps/" ".DS_Store" "#brew_calc.coffee#" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
