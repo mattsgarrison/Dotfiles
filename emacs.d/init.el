@@ -97,7 +97,8 @@
   ;; greet the use with some useful tip
   (run-at-time 5 nil 'prelude-tip-of-the-day))
   ;;(left-fringe . 1)
-
+  ;; Disable key-chord-mode from Prelude
+  (key-chord-mode -1)
   ;; scroll one line at a time (less "jumpy" than defaults)
   (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
 
@@ -117,16 +118,17 @@
    '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
   (setq powerline-color1 "grey22")
   (setq powerline-color2 "grey40")
+  ;; Always enable tab-completion
+  (setq tab-always-indent 'complete)
+  ;; Make Speedbar open in the same frame
+  (require 'sr-speedbar)
+  ;;(speedbar 1)
+  (setq speedbar-use-images nil)
 
 
-  ;; disable the toolbar
-  (tool-bar-mode -1)
-  ;; Add movement keybindings
-  (global-set-key [M-left] 'windmove-left)          ; move to left windnow
-  (global-set-key [M-right] 'windmove-right)        ; move to right window
-  (global-set-key [M-up] 'windmove-up)              ; move to upper window
-  (global-set-key [M-down] 'windmove-down)          ; move to lower window
-
+  ;; Add Robe mode to Ruby mode
+  (add-hook 'ruby-mode-hook 'robe-mode)
+  (add-hook 'robe-mode-hook 'robe-ac-setup)
   ;; Change backup behavior
   (setq
      backup-by-copying t      ; don't clobber symlinks
@@ -137,17 +139,39 @@
      kept-old-versions 2
      version-control t)       ; use versioned backups
 
+  ;; Set up easier window movement commands
+  ;;(global-set-key [M-left] 'windmove-left)
+  ;;(global-set-key [M-right] 'windmove-right)
+  ;;(global-set-key [M-up] 'windmove-up)
+  ;;(global-set-key [M-down] 'windmove-down)
   ;; OSX Specific settings
   (when (eq system-type 'darwin)
     (setq ns-use-srgb-colorspace t)
   )
-
   ;; Turn on autocompletion
   (require 'auto-complete)
   (global-auto-complete-mode t)
   (define-key ac-complete-mode-map "\t" 'ac-complete)
   (define-key ac-complete-mode-map "\r" nil)
 
-  ;; Enable Robe for Ruby Mode
-  (add-hook 'ruby-mode-hook 'robe-mode)
-  (add-hook 'robe-mode-hook 'robe-ac-setup)
+  (setq ibuffer-saved-filter-groups
+      (quote (("default"
+               ("dired" (mode . dired-mode))
+               ("planner" (or
+                           (name . "^\\*Calendar\\*$")
+                           (name . "^diary$")
+                           (mode . muse-mode)))
+               ("emacs" (or
+                         (name . "^\\*scratch\\*$")
+                         (name . "^\\*Messages\\*$")))
+               ("ruby" (or
+                        (name . "^\\.rb&")))
+               ("gnus" (or
+                        (mode . message-mode)
+                        (mode . bbdb-mode)
+                        (mode . mail-mode)
+                        (mode . gnus-group-mode)
+                        (mode . gnus-summary-mode)
+                        (mode . gnus-article-mode)
+                        (name . "^\\.bbdb$")
+                        (name . "^\\.newsrc-dribble")))))))
