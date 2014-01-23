@@ -51,3 +51,4 @@ extract () {
 }
 
 source $HOME/.aliases
+export TERM=xterm-256color
