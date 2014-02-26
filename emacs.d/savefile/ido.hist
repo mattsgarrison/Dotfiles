@@ -2,14 +2,14 @@
 
 ;; ----- ido-last-directory-list -----
 (
- (#("/Users/mattgarrison/Projects/Rumble/" 20 29 (face flx-highlight-face) 29 32 (face flx-highlight-face)) . "crusher/")
- (#("/Users/mattgarrison/Projects/" 20 29 (face flx-highlight-face)) . #("Rumble/" 0 3 (face flx-highlight-face)))
+ ("/Users/mattgarrison/Projects/Rumble/" . "crusher/")
+ ("/Users/mattgarrison/Projects/" . "Rumble/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- #("/Users/mattgarrison/.emacs.d/" 20 29 (face flx-highlight-face))
- #("/Users/mattgarrison/Projects/Rumble/crusher/" 20 29 (face flx-highlight-face) 29 32 (face flx-highlight-face))
+ "/Users/mattgarrison/.emacs.d/"
+ "/Users/mattgarrison/Projects/Rumble/crusher/"
 )
 
 ;; ----- ido-work-file-list -----
@@ -20,7 +20,7 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- (#("/Users/mattgarrison/.emacs.d/" 20 29 (face flx-highlight-face)) (21207 21998 0 0) "vendor/" "utils/" "tramp" "themes/" "savefile/" "sample/" "README.md" "projectile-bookmarks.eld" "prelude-modules.el~" "prelude-modules.el" "personal/" "modules/" "init.el" "elpa/" "core/" "CONTRIBUTING.md" "auto-save-list/" "ac-comphist.dat" "../" "./")
+ ("/Users/mattgarrison/.emacs.d/" (21207 21998 0 0) "vendor/" "utils/" "tramp" "themes/" "savefile/" "sample/" "README.md" "projectile-bookmarks.eld" "prelude-modules.el~" "prelude-modules.el" "personal/" "modules/" "init.el" "elpa/" "core/" "CONTRIBUTING.md" "auto-save-list/" "ac-comphist.dat" "../" "./")
 
  ("/Users/" (21094 57548 0 0) "Shared/" "mattgarrison/" "amandacgarrison/" ".localized" "../" "./")
 
@@ -32,9 +32,9 @@
 
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/controllers/" (21202 56735 0 0) "worker_controller.rb" "users_controller.rb" "sessions_controller.rb" "repo/" "home_controller.rb" "concerns/" "application_controller.rb" ".DS_Store" ".#home_controller.rb" "../" "./")
 
- (#("/Users/mattgarrison/Projects/Rumble/" 20 29 (face flx-highlight-face) 29 32 (face flx-highlight-face)) (21132 12732 0 0) "vagrant-docker-rails/" "rumble_provisioner/" "ImageOptim/" "crusher_vagrant/" "crusher/" ".DS_Store" "../" "./")
+ ("/Users/mattgarrison/Projects/Rumble/" (21132 12732 0 0) "vagrant-docker-rails/" "rumble_provisioner/" "ImageOptim/" "crusher_vagrant/" "crusher/" ".DS_Store" "../" "./")
 
- (#("/Users/mattgarrison/Projects/" 20 29 (face flx-highlight-face)) (21199 20826 0 0) "work_damn_you/" "web/" "vagrant-docker-rails/" "tmp/" "Rumble/" "lib/" "homework/" "go/" "fun/" "forks/" "bowser/" "betterness/" "apps/" ".DS_Store" "#brew_calc.coffee#" "../" "./")
+ ("/Users/mattgarrison/Projects/" (21199 20826 0 0) "work_damn_you/" "web/" "vagrant-docker-rails/" "tmp/" "Rumble/" "lib/" "homework/" "go/" "fun/" "forks/" "bowser/" "betterness/" "apps/" ".DS_Store" "#brew_calc.coffee#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

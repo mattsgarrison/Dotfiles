@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ dired
  ansi-term
  eshell
- dired
- evil-indent
  evil-mode
  undo
  eval-expression
+ package-install
 )
 
 ;; ----- smex-data -----
@@ -16,7 +16,7 @@
  (ag . 2)
  (prelude-mode . 2)
  (dired-virtual-mode . 1)
- (dired . 3)
+ (dired . 4)
  (end-of-visual-line . 1)
  (prelude-google . 1)
  (evil-mode . 3)

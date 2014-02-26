@@ -13,7 +13,7 @@ export ZSH_THEME="bira"
 #export ZSH_THEME="random"
 
 # oh-my-zsh plugins
-plugins=(git ruby heroku gem rbenv bundler rails screen sublime ssh-agent vundle zeus)
+plugins=(bundler docker emoji-clock git gem heroku rails rbenv redis-cli ruby screen sublime ssh-agent vagrant vundle )
 
 source $ZSH/oh-my-zsh.sh
 if which brew > /dev/null; then eval "export BYOBU_PREFIX=`brew --prefix`"; fi
@@ -23,6 +23,7 @@ export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:/usr/lo
 export VAGRANT_DEFAULT_PROVIDER='vmware_fusion'
 export PATH="$HOME/.gobrew/bin:$PATH"
 eval "$(gobrew init -)"
+export DOCKER_HOST=tcp://127.0.0.1:4243
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Better manual pages (uses -help as fallback if no man page exists)
 man () {

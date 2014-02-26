@@ -1,16 +1,18 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/mattgarrison/Projects/Rumble/crusher/Gemfile" . 52)
+(("/Applications/Emacs.app/Contents/Resources/etc/HELLO" . 457)
+ ("/Users/mattgarrison/.emacs.d/elpa/archives/gnu/archive-contents" . 11169)
+ ("/Users/mattgarrison/.emacs.d/elpa/archives/melpa/archive-contents" . 143204)
+ ("/Users/mattgarrison/.emacs.d/savefile/ido.hist" . 3603)
+ ("/Users/mattgarrison/.emacs.d/savefile/recentf" . 1135)
+ ("/Users/mattgarrison/Dotfiles/emacs.d/init.el" . 4996)
  ("/Users/mattgarrison/Projects/Rumble/crusher/"
   (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/.#Gemfile"))
- ("/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/"
-  (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/.gitkeep"))
+ ("/Users/mattgarrison/Projects/Rumble/crusher/Gemfile" . 52)
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/"
   (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/app/.DS_Store"))
+ ("/Users/mattgarrison/Projects/Rumble/crusher/app/assets/javascripts/crush_commits.js.coffee" . 2373)
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/controllers/" . 389)
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/controllers/sessions_controller.rb" . 270)
- ("/Users/mattgarrison/Dotfiles/emacs.d/init.el" . 4996)
- ("/Users/mattgarrison/.emacs.d/savefile/recentf" . 999)
- ("/Users/mattgarrison/.emacs.d/savefile/ido.hist" . 3977)
- ("/Users/mattgarrison/.emacs.d/elpa/archives/melpa/archive-contents" . 143204)
- ("/Users/mattgarrison/.emacs.d/elpa/archives/gnu/archive-contents" . 11169)
- ("/Users/mattgarrison/Projects/Rumble/crusher/app/assets/javascripts/crush_commits.js.coffee" . 2373))
+ ("/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/"
+  (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/.gitkeep"))
+ ("/Users/mattgarrison/Projects/docker/railsgirls_docker/Vagrantfile" . 221))
