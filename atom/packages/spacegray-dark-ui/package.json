@@ -1,0 +1,26 @@
+{
+  "name": "spacegray-dark-ui",
+  "theme": "ui",
+  "version": "0.4.1",
+  "description": "Port of the Spacegray Sublime Text theme http://kkga.github.io/spacegray to Atom",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cannikin/spacegray-dark-ui"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "readme": "# Spacegray Dark UI theme\n\nPort of the [Spacegray](http://kkga.github.io/spacegray) Sublime Text theme to Atom.\n\n![screenshot](http://ridingtheclutch.com.s3.amazonaws.com/images/spacegray.png)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/cannikin/spacegray-dark-ui/issues"
+  },
+  "homepage": "https://github.com/cannikin/spacegray-dark-ui",
+  "_id": "spacegray-dark-ui@0.4.1",
+  "dist": {
+    "shasum": "6e02f9af396159db581c7d1b5fda287a6ac81bdb"
+  },
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114128-16454-p3843e/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114128-16454-p3843e/package.tgz"
+}
