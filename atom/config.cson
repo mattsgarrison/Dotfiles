@@ -7,7 +7,7 @@
 'metrics':
   'userId': 'b7334f48c830f1c439fe3049b1083fd1de1a798d'
 'editor':
-  'fontSize': 21
+  'fontSize': 19
   'showIndentGuide': true
 'core':
   'themes': [
@@ -23,3 +23,9 @@
     'Zen'
   ]
   'projectHome': '/Users/mattgarrison/Projects'
+'autosave':
+  'enabled': true
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
+'find-and-replace':
+  'openProjectFindResultsInRightPane': true
