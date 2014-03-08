@@ -1,18 +1,18 @@
 'exception-reporting':
   'userId': '2f54c8ac-8d76-475e-0410-a2e4ab104de2'
 'release-notes':
-  'viewedVersion': '0.61.0'
+  'viewedVersion': '0.69.0'
 'welcome':
   'showOnStartup': false
 'metrics':
   'userId': 'b7334f48c830f1c439fe3049b1083fd1de1a798d'
 'editor':
-  'fontSize': 19
+  'fontSize': 21
   'showIndentGuide': true
 'core':
   'themes': [
-    'atom-dark-ui'
-    'base16-tomorrow-dark-theme'
+    'unity-ui'
+    'twilight-syntax-spacegray-ui'
   ]
   'ignoredNames': [
     '.git'
@@ -25,7 +25,9 @@
   'projectHome': '/Users/mattgarrison/Projects'
 'autosave':
   'enabled': true
-'autocomplete':
-  'includeCompletionsFromAllBuffers': true
+'autocomplete': {}
 'find-and-replace':
   'openProjectFindResultsInRightPane': true
+'autocomplete-plus':
+  'includeCompletionsFromAllBuffers': true
+  'liveCompletion': true

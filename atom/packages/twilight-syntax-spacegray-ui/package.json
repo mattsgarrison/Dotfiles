@@ -1,7 +1,7 @@
 {
   "name": "twilight-syntax-spacegray-ui",
   "theme": "syntax",
-  "version": "0.1.3",
+  "version": "0.3.0",
   "description": "Twilight syntax theme for GitHub's Atom IDE, optimized for the Spacegray UI theme.",
   "repository": {
     "type": "git",
@@ -17,10 +17,10 @@
     "url": "https://github.com/cannikin/twilight-syntax-spacegray-ui/issues"
   },
   "homepage": "https://github.com/cannikin/twilight-syntax-spacegray-ui",
-  "_id": "twilight-syntax-spacegray-ui@0.1.3",
+  "_id": "twilight-syntax-spacegray-ui@0.3.0",
   "dist": {
-    "shasum": "9c3c822522171d5d0abab968afd03d8e23c13424"
+    "shasum": "ca82c743cbbe5d89d9ce38ed01a86fb0bbc02c4a"
   },
-  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114128-16407-5w9geu/package.tgz",
-  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114128-16407-5w9geu/package.tgz"
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11424-92419-qsrw8x/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11424-92419-qsrw8x/package.tgz"
 }

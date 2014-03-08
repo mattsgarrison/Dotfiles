@@ -1,7 +1,7 @@
 {
   "name": "Zen",
   "main": "./lib/zen",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "private": true,
   "description": "Distraction free writing.",
   "activationEvents": [
@@ -22,10 +22,10 @@
     "url": "https://github.com/defunkt/zen/issues"
   },
   "homepage": "https://github.com/defunkt/zen",
-  "_id": "Zen@0.4.0",
+  "_id": "Zen@0.6.0",
   "dist": {
-    "shasum": "a82e845c438fd24a98fbd127dc3dcded852eaae6"
+    "shasum": "07643e3830877c492f88e176b6c4e69ef4105380"
   },
-  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114128-14071-1quspud/package.tgz",
-  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114128-14071-1quspud/package.tgz"
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11424-92412-e0ab7s/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11424-92412-e0ab7s/package.tgz"
 }

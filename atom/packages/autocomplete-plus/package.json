@@ -1,0 +1,31 @@
+{
+  "name": "autocomplete-plus",
+  "version": "0.5.0",
+  "main": "./lib/autocomplete",
+  "description": "Display possible completions in the editor while typing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saschagehlich/autocomplete-plus"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {
+    "underscore-plus": "1.x",
+    "fuzzaldrin": "~1.0.0",
+    "q": "~1.0.0",
+    "minimatch": "~0.2.14"
+  },
+  "readme": "# autocomplete+ package\n\nView and insert possible completions in the editor while typing\n\n![Autocomplete+](http://s14.directupload.net/images/140304/y7r7g5df.gif)\n\n**Please note:** In the example above I have \"Live completion\" enabled.\n\n## Features\n\n* Shows autocompletion suggestions while typing\n* Two modes: Live and delayed autocompletion (instant might slow down performance)\n* Wordlist generation happens initially and on save (saves performance)\n* Suggestions are calculated using `fuzzaldrin` (better results)\n\n## Installation\n\nYou can install autocomplete+ using the Preferences pane.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/saschagehlich/autocomplete-plus/issues"
+  },
+  "homepage": "https://github.com/saschagehlich/autocomplete-plus",
+  "_id": "autocomplete-plus@0.5.0",
+  "dist": {
+    "shasum": "98783de8d6f9127fb1658e9e8b46f6a5e1802c69"
+  },
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-71748-1pulxx4/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-71748-1pulxx4/package.tgz"
+}
