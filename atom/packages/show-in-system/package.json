@@ -1,0 +1,31 @@
+{
+  "name": "show-in-system",
+  "main": "./lib/show-in-system",
+  "version": "0.2.0",
+  "description": "atom.io package to show and open files or directories in the system file manager",
+  "activationEvents": [
+    "show-in-system:show",
+    "show-in-system:open"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerolimov/atom-show-in-system"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.60.0"
+  },
+  "dependencies": {},
+  "readme": "## [atom.io](http://atom.io) package to show and open files or directories in the system file manager\n\nA small extension which adds two new entries\nto the file-view context-menu and\nto the context-menu of the tab-view.\n\nThe first one will open the system file manager and will mark\nthe selected file while the second option will open the file\nwith the default system application.\n\n![Screenshot file view](https://github.com/jerolimov/atom-show-in-system/raw/master/screenshot-file-view.png)\n\n![Screenshot tab view](https://github.com/jerolimov/atom-show-in-system/raw/master/screenshot-tab-view.png)\n\nPackage is available on [atom.io/packages](https://atom.io/packages/show-in-system)\nas `show-in-system`!\n\nYou can simple install this plugin with the atom package manager:\n\n    apm install show-in-system\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jerolimov/atom-show-in-system/issues"
+  },
+  "homepage": "https://github.com/jerolimov/atom-show-in-system",
+  "_id": "show-in-system@0.2.0",
+  "dist": {
+    "shasum": "7d91b8c9a04d88ba57a913901ff16b14eeb00ea9"
+  },
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73378-llpi7x/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73378-llpi7x/package.tgz"
+}

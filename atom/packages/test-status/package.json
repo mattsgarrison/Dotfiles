@@ -1,0 +1,27 @@
+{
+  "name": "test-status",
+  "main": "./lib/test-status",
+  "version": "0.9.4",
+  "description": "Adds the status of your `rake` command to the status bar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tombell/test-status"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# Test Status Package\n\nAdds the status of your test command to the Atom status bar, when you save a\nsource file.\n\n![Test Status Usage](https://raw.github.com/tombell/test-status/master/screenshots/atom-test-status.gif)\n\n## Installing\n\nUse the Atom package manager, which can be found in the Settings view or run\n`apm install test-status` from the command line.\n\n## Usage\n\nThe package will run a test command depending on what files it finds in the root\nof your project. For example, if you have a `Rakefile` in your project root, the\ncommand `rake test` will be run or if you have a `Gruntfile` in your project\nroot then `grunt test` will be run. The priority of which command is executed is\ndetermined by the order the mappings are defined in your configuration.\n\nBy default, the following files are mapped to the commands:\n\n  * `Rakefile` &rarr; `rake test`\n  * `Gruntfile` &rarr; `grunt test`\n  * `script/test` &rarr; `script/test`\n  * `script/cibuild` &rarr; `script/cibuild`\n  * `.deft` &rarr; `deft test` (Open Dylan)\n\nWhen your command is running the Hubot face in the status bar will turn orange.\nIf the command exits with 0 the Hubot face will turn green. Exiting with a\nnon-zero code will turn the Hubot face red.\n\nIf you would like to view the output of your command you can toggle the output\npanel using the default keymapping. On Mac OS X the keymap is `cmd-l` and on\nWindows the keymap is `ctrl-l`.\n\nThe following _commands_ are available for you to remap and/or run via the\ncommand palette.\n\n* `test-status:toggle-output` - Toggles the test results output panel\n* `test-status:run-tests` - Runs the configured test command\n\n## Configuring\n\nThe file to command mapping is completely configurable so you can add your\npreferred test runner. Just add the overriden values to your `config.cson`.\n\n```coffeescript\n'test-status':\n  'Rakefile': 'rake spec'\n  'Gruntfile': 'grunt spec'\n  'gulpfile': 'gulp test'\n```\n\nBecause of the way Atom handles the keys of configuration options you should not\ninclude the file extension for the file.\n\n## Support\n\nIf you wish to support this package and help further its development, feel free\nto tip via Gittip.\n\n[![Gittip](http://img.shields.io/gittip/tombell.png)](https://www.gittip.com/tombell/)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/tombell/test-status/issues"
+  },
+  "homepage": "https://github.com/tombell/test-status",
+  "_id": "test-status@0.9.4",
+  "dist": {
+    "shasum": "36a6a46365416fa50fe0362a78dd0234045478c0"
+  },
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73493-2tqzgf/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73493-2tqzgf/package.tgz"
+}

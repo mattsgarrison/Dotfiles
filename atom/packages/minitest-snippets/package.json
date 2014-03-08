@@ -1,0 +1,27 @@
+{
+  "name": "minitest-snippets",
+  "version": "0.2.0",
+  "description": "Minitest snippets in Atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonmagic/atom-minitest-snippets"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/jonmagic/atom-minitest-snippets/issues"
+  },
+  "readme": "# Minitest snippets in Atom\n\nOriginally [converted](http://atom.io/docs/latest/converting-a-text-mate-bundle) from the [Minitest bundle](https://github.com/jish/MiniTest.tmbundle).\n\nContributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.\n",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/jonmagic/atom-minitest-snippets",
+  "_id": "minitest-snippets@0.2.0",
+  "dist": {
+    "shasum": "4e109c6baeab40e3df75376ee98ffd513d464161"
+  },
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73453-u0p1ww/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73453-u0p1ww/package.tgz"
+}

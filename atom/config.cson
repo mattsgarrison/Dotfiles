@@ -21,6 +21,10 @@
   ]
   'disabledPackages': [
     'Zen'
+    'test-status'
+    'minitest-snippets'
+    'vim-mode'
+    'autocomplete-plus'
   ]
   'projectHome': '/Users/mattgarrison/Projects'
 'autosave':
@@ -31,3 +35,10 @@
 'autocomplete-plus':
   'includeCompletionsFromAllBuffers': true
   'liveCompletion': true
+'spell-check':
+  'grammars': [
+    'source.gfm'
+    'text.git-commit'
+    'text.plain'
+    'text.plain.null-grammar'
+  ]
