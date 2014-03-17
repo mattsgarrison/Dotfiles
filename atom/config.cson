@@ -7,8 +7,9 @@
 'metrics':
   'userId': 'b7334f48c830f1c439fe3049b1083fd1de1a798d'
 'editor':
-  'fontSize': 21
   'showIndentGuide': true
+  'showInvisibles': true
+  'fontSize': 18
 'core':
   'themes': [
     'unity-ui'
@@ -21,15 +22,16 @@
   ]
   'disabledPackages': [
     'Zen'
-    'test-status'
     'minitest-snippets'
-    'vim-mode'
     'autocomplete-plus'
+    'vim-mode'
+    'test-status'
   ]
   'projectHome': '/Users/mattgarrison/Projects'
 'autosave':
   'enabled': true
-'autocomplete': {}
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
 'find-and-replace':
   'openProjectFindResultsInRightPane': true
 'autocomplete-plus':
@@ -42,3 +44,5 @@
     'text.plain'
     'text.plain.null-grammar'
   ]
+'test-status':
+  'Rakefile': 'bundle exec rake test:all'

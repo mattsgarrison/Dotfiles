@@ -44,6 +44,10 @@ namespace :utils do
     system 'find . -size +20000k -exec du -h {} \;'
   end
 
+  desc "See what is running on port 3000"
+  task :see_port3000_proc do
+    system "sudo lsof -i :3000"
+  end
   desc "Save all apt packages installed on a system"
   task :aptsave do
     system %W[aptitude search '!~M ~i' | awk -F " " '{ print "apt-get -y install " $2 }' > aptshell.sh]

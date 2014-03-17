@@ -21,3 +21,6 @@
 [user]
 	email = matt@iconoclastlabs.com
 	name = Matt Garrison
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

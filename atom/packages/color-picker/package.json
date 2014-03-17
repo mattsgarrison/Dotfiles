@@ -1,7 +1,7 @@
 {
   "name": "color-picker",
   "main": "./lib/ColorPicker",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "private": true,
   "description": "A Color Picker for the Atom Editor. Right click a color and select color picker to open it.",
   "repository": {
@@ -12,16 +12,16 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "readme": "# A Color Picker for Atom\n\nA color picker for Atom. Either right click a color and select `Color picker`, or place the cursor on a color and hit `CMD-SHIFT-C`. Currently reads HEXA, RGBA, RGB and HEX.\n\n## Preview\n\n![Color Picker in action](http://f.cl.ly/items/3B1L3z0p2Q0R0y2Y0M2I/colorpicker.gif)\n\n## Incoming\n\n- Sass/Less color variable lookup\n- Code cleanup\n- Edit the color value\n- If RGB is read, spit RGB\n- If HEXA is read, spit HEXA\n- Tests\n",
+  "readme": "# A Color Picker for Atom\n\nA color picker for Atom. Either right click a color and select `Color picker`, or place the cursor on a color and hit `CMD-SHIFT-C`. Currently reads HEXA, RGBA, RGB and HEX.\n\n**NEW:** Now also inspects Sass/LESS variables! [Take a look here.](http://t.hom.as/colorpicker4.mov)\n\n## Preview\n\n![Color Picker in action](http://f.cl.ly/items/1J232z2S111Y2G2s1A45/output.gif)\n\n## Incoming\n\n- Code cleanup\n- If RGB is read, spit RGB\n- If HEXA is read, spit HEXA\n- Preview color manipulation functions (lighten, darken)\n- Convertions\n- Stylus variable lookup\n- Edit the color value\n- Tests\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/thomaslindstrom/color-picker/issues"
   },
   "homepage": "https://github.com/thomaslindstrom/color-picker",
-  "_id": "color-picker@0.8.0",
+  "_id": "color-picker@0.9.0",
   "dist": {
-    "shasum": "eef5ecf647561f5138777eef8e2d7d14f605b327"
+    "shasum": "683de20e7ad101f8f42f6911e4635772d96e4e7a"
   },
-  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-71708-1td7c6h/package.tgz",
-  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-71708-1td7c6h/package.tgz"
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114213-77290-9zozrq/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114213-77290-9zozrq/package.tgz"
 }
