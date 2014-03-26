@@ -9,8 +9,9 @@ module.exports =
   # Returns nothing.
   activate: ->
     atom.config.setDefaults('test-status', {
-      'Rakefile': 'rake test',
-      'Gruntfile': 'grunt test'
+      'test/*_test.rb': 'rake test',
+      'spec/*_spec.rb': 'rake spec',
+      'Gruntfile.*': 'grunt test'
       'script/test': 'script/test'
       'script/cibuild': 'script/cibuild'
       'deft-package.json': 'deft test'

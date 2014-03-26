@@ -9,7 +9,7 @@
 'editor':
   'showIndentGuide': true
   'showInvisibles': true
-  'fontSize': 18
+  'fontSize': 22
 'core':
   'themes': [
     'unity-ui'

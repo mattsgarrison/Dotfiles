@@ -20,8 +20,9 @@ determined by the order the mappings are defined in your configuration.
 
 By default, the following files are mapped to the commands:
 
-  * `Rakefile` &rarr; `rake test`
-  * `Gruntfile` &rarr; `grunt test`
+  * `test/*_test.rb` &rarr; `rake test`
+  * `spec/*_spec.rb` &rarr; `rake spec`
+  * `Gruntfile.*` &rarr; `grunt test`
   * `script/test` &rarr; `script/test`
   * `script/cibuild` &rarr; `script/cibuild`
   * `deft-package.json` &rarr; `deft test` (Open Dylan)
@@ -43,12 +44,13 @@ command palette.
 ## Configuring
 
 The file to command mapping is completely configurable so you can add your
-preferred test runner. Just add the overriden values to your `config.cson`.
+preferred test runner. Just add the overriden values to your `config.cson`. You
+can now use glob style matches in the file name.
 
 ```coffeescript
 'test-status':
-  'Rakefile': 'rake spec'
-  'Gruntfile': 'grunt spec'
+  'spec/*_spec.rb': 'rake spec'
+  'Gruntfile.*': 'grunt spec'
   'gulpfile': 'gulp test'
 ```
 
@@ -57,7 +59,12 @@ include the file extension for the file.
 
 ## Gotchyas
 
-* Atom uses `PATH` from where it was launched. Use `atom` from the console for maximum sanity, as Atom from the icon pulls the PATH from whatever launchctl is setup from.
+* Atom uses `PATH` from where it was launched. Use `atom` from the console for
+  maximum sanity, as Atom from the icon pulls the PATH from whatever launchctl is
+  setup from.
+* When manually configuring file matches containing periods, the Settings view
+  for the package will appear to be broken. This is due to Atom thinking the
+  period is a keypath.
 
 ## Support
 
