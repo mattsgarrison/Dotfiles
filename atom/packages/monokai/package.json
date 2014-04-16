@@ -1,7 +1,7 @@
 {
   "name": "monokai",
   "theme": "syntax",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "private": true,
   "description": "A monokai theme",
   "repository": {
@@ -18,10 +18,10 @@
     "url": "https://github.com/kevinsawicki/monokai/issues"
   },
   "homepage": "https://github.com/kevinsawicki/monokai",
-  "_id": "monokai@0.3.0",
+  "_id": "monokai@0.5.0",
   "dist": {
-    "shasum": "a1a42f27504104232ec63065281c6873726d1d47"
+    "shasum": "66f8c048cbb09f77aad8b5fc30090c21b7a5184b"
   },
-  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11424-92416-sv8n10/package.tgz",
-  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11424-92416-sv8n10/package.tgz"
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114226-49775-kbrssm/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114226-49775-kbrssm/package.tgz"
 }

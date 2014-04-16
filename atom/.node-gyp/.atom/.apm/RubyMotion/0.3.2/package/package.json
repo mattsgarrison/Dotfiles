@@ -1,0 +1,16 @@
+{
+  "name": "RubyMotion",
+  "main": "./lib/rubymotion",
+  "version": "0.3.2",
+  "private": true,
+  "description": "RubyMotion package for Atom",
+  "activationEvents": [],
+  "repository": "https://github.com/satococoa/atom-rubymotion",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "underscore-plus": "1.x"
+  }
+}

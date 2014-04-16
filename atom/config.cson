@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': '2f54c8ac-8d76-475e-0410-a2e4ab104de2'
 'release-notes':
-  'viewedVersion': '0.69.0'
+  'viewedVersion': '0.83.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -9,11 +9,11 @@
 'editor':
   'showIndentGuide': true
   'showInvisibles': true
-  'fontSize': 22
+  'fontSize': 19
 'core':
   'themes': [
     'unity-ui'
-    'twilight-syntax-spacegray-ui'
+    'base16-tomorrow-dark-theme'
   ]
   'ignoredNames': [
     '.git'
@@ -23,9 +23,9 @@
   'disabledPackages': [
     'Zen'
     'minitest-snippets'
-    'autocomplete-plus'
     'vim-mode'
     'test-status'
+    'autocomplete-plus'
   ]
   'projectHome': '/Users/mattgarrison/Projects'
 'autosave':
@@ -46,3 +46,5 @@
   ]
 'test-status':
   'Rakefile': 'bundle exec rake test:all'
+'zentabs':
+  'maximumOpenedTabs': 8

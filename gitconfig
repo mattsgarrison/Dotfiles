@@ -9,7 +9,7 @@
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 [merge]
-  tool = vimdiff
+	tool = diffmerge
 [difftool "vimdiff"]
   cmd = vimdiff $LOCAL $REMOTE
 [difftool "sourcetree"]
@@ -19,8 +19,11 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	email = matt@iconoclastlabs.com
+	email = mattsgarrison@iconoclastlabs.com
 	name = Matt Garrison
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[mergetool "diffmerge"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
