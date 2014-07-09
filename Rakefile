@@ -1,9 +1,14 @@
 require 'pathname'
 require 'fileutils'
-namespace :btmm do
+namespace :apple do
   desc "Find all BTMM computers"
-  task :list do
+  task :btmm_list do
     system 'dns-sd -B _ssh 1031349116.members.btmm.icloud.com'
+  end
+
+  desc "Remount the SD Card slot"
+  task :remount_sd_slot do
+    system 'sudo kextunload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext; sudo kextload /System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext'
   end
 end
 namespace :monitor do
