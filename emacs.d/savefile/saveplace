@@ -1,9 +1,8 @@
 ;;; -*- coding: utf-8 -*-
-(("/Applications/Emacs.app/Contents/Resources/etc/HELLO" . 457)
+(("/Users/mattgarrison/.emacs.d/savefile/recentf" . 1158)
+ ("/Users/mattgarrison/.emacs.d/savefile/ido.hist" . 3603)
  ("/Users/mattgarrison/.emacs.d/elpa/archives/gnu/archive-contents" . 11169)
  ("/Users/mattgarrison/.emacs.d/elpa/archives/melpa/archive-contents" . 143204)
- ("/Users/mattgarrison/.emacs.d/savefile/ido.hist" . 3603)
- ("/Users/mattgarrison/.emacs.d/savefile/recentf" . 1135)
  ("/Users/mattgarrison/Dotfiles/emacs.d/init.el" . 4996)
  ("/Users/mattgarrison/Projects/Rumble/crusher/"
   (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/.#Gemfile"))
@@ -14,5 +13,4 @@
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/controllers/" . 389)
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/controllers/sessions_controller.rb" . 270)
  ("/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/"
-  (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/.gitkeep"))
- ("/Users/mattgarrison/Projects/docker/railsgirls_docker/Vagrantfile" . 221))
+  (dired-filename . "/Users/mattgarrison/Projects/Rumble/crusher/app/jobs/.gitkeep")))

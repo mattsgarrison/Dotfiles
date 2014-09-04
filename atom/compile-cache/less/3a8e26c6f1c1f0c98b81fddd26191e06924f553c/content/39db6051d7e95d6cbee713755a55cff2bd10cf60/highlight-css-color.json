@@ -1,0 +1,1 @@
+{"digest":"4e140dcecee7b04e43bc043c29a38a31a9a6b7de","css":".css-color-background {\n  position: absolute;\n  padding: 2px;\n  border-radius: 2px;\n}\n","imports":[{"path":"static/variables/ui-variables.less","digest":"a62842e88e9f6f18817f0a1662302588958b59ac"}],"version":1}

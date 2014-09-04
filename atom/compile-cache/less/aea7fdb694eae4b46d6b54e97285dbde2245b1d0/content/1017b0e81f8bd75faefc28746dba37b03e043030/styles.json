@@ -1,0 +1,1 @@
+{"digest":"101e6b94605a0b4924197dcca06441e08be04703","css":"/*\n * Your Stylesheet\n *\n * This stylesheet is loaded when Atom starts up and is reloaded automatically\n * when it is changed.\n *\n * If you are unfamiliar with LESS, you can read more about it here:\n * http://www.lesscss.org\n */\n.editor .entity.name.tag {\n  text-decoration: none;\n}\n","imports":[],"version":1}

@@ -1,11 +1,12 @@
 {
   "name": "show-in-system",
   "main": "./lib/show-in-system",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "atom.io package to show and open files or directories in the system file manager",
   "activationEvents": [
     "show-in-system:show",
-    "show-in-system:open"
+    "show-in-system:open",
+    "show-in-system:terminal"
   ],
   "repository": {
     "type": "git",
@@ -16,16 +17,16 @@
     "atom": ">0.60.0"
   },
   "dependencies": {},
-  "readme": "## [atom.io](http://atom.io) package to show and open files or directories in the system file manager\n\nA small extension which adds two new entries\nto the file-view context-menu and\nto the context-menu of the tab-view.\n\nThe first one will open the system file manager and will mark\nthe selected file while the second option will open the file\nwith the default system application.\n\n![Screenshot file view](https://github.com/jerolimov/atom-show-in-system/raw/master/screenshot-file-view.png)\n\n![Screenshot tab view](https://github.com/jerolimov/atom-show-in-system/raw/master/screenshot-tab-view.png)\n\nPackage is available on [atom.io/packages](https://atom.io/packages/show-in-system)\nas `show-in-system`!\n\nYou can simple install this plugin with the atom package manager:\n\n    apm install show-in-system\n",
+  "readme": "## [atom.io](http://atom.io) package to show and open files or directories in the system file manager or terminal\n\nYou can simple install this plugin with the atom package manager or within Atom itself:\n\n    apm install show-in-system\n\nA small extension which **adds new entries to the file tree context-menu and\nto the context-menu of the editor tabs**.\n\n* Add `Show in Finder / Explorer` to each editor tab.  \n  (Removed rom the tree context-menu in v0.3 because it is not part of the preinstalled Atom packages.)\n* Add `Open with default application` in the file tree and tab context-menu.\n* Add `Open in Terminal` for folders and files (scripts) in the file tree and tab context-menu. Current this is OSX-only. Feedback for other systems or Pull Requests are welcome.\n\n![Screenshot file view](https://github.com/jerolimov/atom-show-in-system/raw/master/screenshot-file-view.png)\n\n![Screenshot tab view](https://github.com/jerolimov/atom-show-in-system/raw/master/screenshot-tab-view.png)\n\nThis package is available on [atom.io/packages](https://atom.io/packages/show-in-system) and open sourced on [github](https://github.com/jerolimov/atom-show-in-system).\n\nAuthor: [@jerolimov](https://twitter.com/jerolimov)\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/jerolimov/atom-show-in-system/issues"
   },
   "homepage": "https://github.com/jerolimov/atom-show-in-system",
-  "_id": "show-in-system@0.2.0",
+  "_id": "show-in-system@0.3.0",
   "dist": {
-    "shasum": "7d91b8c9a04d88ba57a913901ff16b14eeb00ea9"
+    "shasum": "42cd1afdf6fab043988cc5d8cd460860a8d2d21a"
   },
-  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73378-llpi7x/package.tgz",
-  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-11428-73378-llpi7x/package.tgz"
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114727-18026-1i0dfny/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114727-18026-1i0dfny/package.tgz"
 }

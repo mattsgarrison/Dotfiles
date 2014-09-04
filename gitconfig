@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	excludesfile = /Users/mattgarrison/.gitignore_global
 [diff]
 	tool = vimdiff
 [difftool]
@@ -13,13 +14,13 @@
 [difftool "vimdiff"]
   cmd = vimdiff $LOCAL $REMOTE
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [user]
-	email = mattsgarrison@iconoclastlabs.com
+	email = mattsgarrison@gmail.com
 	name = Matt Garrison
 [filter "media"]
 	clean = git-media-clean %f

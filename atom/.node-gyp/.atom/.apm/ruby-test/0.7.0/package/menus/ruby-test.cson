@@ -1,0 +1,20 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Show ruby-test': 'ruby-test:toggle'
+      'Run ruby-test for file': 'ruby-test:test-file'
+      'Run ruby-test at line': 'ruby-test:test-single'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Ruby Test'
+      'submenu': [
+        { 'label': 'Toggle Panel', 'command': 'ruby-test:toggle' }
+        { 'label': 'Run test file', 'command': 'ruby-test:test-file' }
+        { 'label': 'Run single test', 'command': 'ruby-test:test-single' }
+      ]
+    ]
+  }
+]

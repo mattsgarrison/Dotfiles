@@ -14,18 +14,21 @@ export ZSH_THEME="bira"
 #export ZSH_THEME="random"
 
 # oh-my-zsh plugins
-plugins=(bundler docker emoji-clock git gem heroku rails rbenv redis-cli ruby screen sublime ssh-agent vagrant vundle )
+plugins=(bundler docker git gem rails rbenv redis-cli ruby screen sublime ssh-agent vagrant)
 
 source $ZSH/oh-my-zsh.sh
 if which brew > /dev/null; then eval "export BYOBU_PREFIX=`brew --prefix`"; fi
 export NODE_PATH="/usr/local/lib/node_modules"
 
 export PATH="$HOME/.rbenv/bin:$HOME/bin:/usr/local/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin/:$PATH"
 export VAGRANT_DEFAULT_PROVIDER='vmware_fusion'
-export PATH="$HOME/.gobrew/bin:$PATH"
-eval "$(gobrew init -)"
 export DOCKER_HOST=tcp://127.0.0.1:4243
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export RUBYMOTION_ANDROID_SDK=~/android-rubymotion/sdk
+export RUBYMOTION_ANDROID_NDK=~/android-rubymotion/ndk
+export EDITOR="/usr/local/bin/mate -w"
+if which rbenv > /dev/null; then 
+  eval "$(rbenv init - --no-rehash)"; fi
 # Better manual pages (uses -help as fallback if no man page exists)
 man () {
 /usr/bin/man $@ || (help $@ 2> /dev/null && help $@ | most)
@@ -51,6 +54,5 @@ extract () {
          echo "'$1' is not a valid file"
      fi
 }
-
 source $HOME/.aliases
 export TERM=xterm-256color

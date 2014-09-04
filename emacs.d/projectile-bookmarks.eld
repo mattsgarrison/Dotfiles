@@ -1,1 +1,1 @@
-("~/Dotfiles/" "~/Projects/docker/railsgirls_docker/" "~/Projects/Rumble/crusher/" "~/.emacs.d/" "~/Projects/web/crusher/" "~/Projects/LCPIC/CompletedTasks/")
+("~/Dotfiles/" "~/Projects/pairin/pairin/" "~/Projects/docker/railsgirls_docker/" "~/Projects/Rumble/crusher/" "~/.emacs.d/" "~/Projects/web/crusher/" "~/Projects/LCPIC/CompletedTasks/")

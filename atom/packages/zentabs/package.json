@@ -1,6 +1,6 @@
 {
   "name": "zentabs",
-  "version": "0.4.1",
+  "version": "0.6.0",
   "main": "./lib/zentabs",
   "description": "Keep the opened tabs amount below specified limit",
   "license": "MIT",
@@ -14,16 +14,16 @@
   "dependencies": {
     "underscore-plus": "1.x"
   },
-  "readme": "# ZenTabs atom package\n\nKeep your opened tabs below a maximum limit, closing the oldest one first.\n\nInspired by travmik's SublimeText [ZenTabs](https://github.com/travmik/ZenTabs) package.\n\nSee it in action with a 5 tabs limit:\n\n![screencast](http://i.imgur.com/nxx4E1y.gif)\n\n## Pin tabs\n\nYou can right click tabs to pin/unpin them. It basically works as a whitelist.\n\n![pinned-screecast](http://i.imgur.com/2n0VJHH.gif)\n\n## Options\n* `maximumOpenedTabs:5`: the maximum amount of tabs that will be kep open\n* `manualMode:false`: disable autmatic tab closing but still allow you to cleanup tabs through the key bindings\n* `showPinnedIcon:true`: Show a lock icon next to pinned tabs title\n\n## Key bindings\n\n`zentabs:cleanup`, default `ctrl-Z`: triggers a tab cleanup\n",
+  "readme": "# ZenTabs atom package\n\nKeep your opened tabs below a maximum limit, closing the oldest one first.\n\nInspired by travmik's SublimeText [ZenTabs](https://github.com/travmik/ZenTabs) package.\n\nSee it in action with a 5 tabs limit:\n\n![screencast](http://i.imgur.com/nxx4E1y.gif)\n\n## Pin tabs\n\nYou can right click tabs to pin/unpin them. It basically works as a whitelist.\n\n![pinned-screecast](http://i.imgur.com/2n0VJHH.gif)\n\n## Options\n* `maximumOpenedTabs:5`: the maximum amount of tabs that will be kep open\n* `manualMode:false`: disable autmatic tab closing but still allow you to cleanup tabs through the key bindings\n* `showPinnedIcon:true`: Show a lock icon next to pinned tabs title\n* `neverCloseUnsaved:false`: If set to true, unsaved file won't be closed\n\n## Key bindings\n\n`zentabs:cleanup`, default `ctrl-Z`: triggers a tab cleanup\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/ArnaudRinquin/atom-zentabs/issues"
   },
   "homepage": "https://github.com/ArnaudRinquin/atom-zentabs",
-  "_id": "zentabs@0.4.1",
+  "_id": "zentabs@0.6.0",
   "dist": {
-    "shasum": "d0fdea66c3bee6865add537611469164f68f4d0e"
+    "shasum": "1ed18f37eb7327d532d7208510311107b5a444c7"
   },
-  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114210-10340-bxppel/package.tgz",
-  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114210-10340-bxppel/package.tgz"
+  "_resolved": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114727-18075-ucarna/package.tgz",
+  "_from": "/var/folders/wz/f6fydm714hqc77v48hsnkh7r0000gn/T/d-114727-18075-ucarna/package.tgz"
 }

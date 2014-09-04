@@ -1,0 +1,13 @@
+{
+  "name": "unity-ui",
+  "theme": "ui",
+  "version": "0.5.4",
+  "main": "./lib/unity-ui",
+  "private": false,
+  "description": "An Atom theme for a more native experience on OS X.",
+  "repository": "https://github.com/orderedlist/unity-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

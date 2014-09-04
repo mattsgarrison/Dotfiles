@@ -1,0 +1,1 @@
+{"menu":[{"label":"Packages","submenu":[{"label":"CoffeeScript Preview","submenu":[{"label":"Toggle CoffeeScript Preview","command":"coffeescript-preview:toggle"}]}]}]}
