@@ -1,1 +1,0 @@
-{"fileTypes":["yeoman","yo"],"patterns":[{"match":"(yo+)","captures":{"1":{"name":"keyword.control.untitled"}}},{"match":"endyo","name":"keyword.control.untitled"}],"scopeName":"coffeescript-preview"}

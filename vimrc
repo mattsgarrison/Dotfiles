@@ -43,7 +43,7 @@ NeoBundle 'git://github.com/nelstrom/vim-textobj-rubyblock.git'
 NeoBundle 'git://github.com/kana/vim-textobj-user.git'
 NeoBundle 'git@github.com:Townk/vim-autoclose.git'
 NeoBundle 'Lokaltog/vim-easymotion'
-
+NeoBundle 'mhinz/vim-startify'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'bling/vim-bufferline'
 

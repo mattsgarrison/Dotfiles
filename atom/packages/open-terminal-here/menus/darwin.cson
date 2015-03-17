@@ -1,3 +1,0 @@
-'context-menu':
-  '.platform-darwin .tree-view':
-    'Open Terminal Here': 'open-terminal-here:open'
